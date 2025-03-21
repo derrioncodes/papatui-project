@@ -37,7 +37,7 @@ ul {
 .announcement__banner p{
     max-width: 437px;
     margin: auto;
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
     font-weight: 400;
     padding: 12px 18px;
@@ -51,5 +51,6 @@ ul {
 .close_btn__announcement__banner{
     font-size: 14px;
 }
+
 
 
