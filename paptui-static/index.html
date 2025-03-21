@@ -114,8 +114,8 @@
         </div>
     </header>
      
-    <div class="shopping-cart__popup__bg"></div>
-    <div class="shopping-cart__popup">
+    <div class="shopping-cart__popup__bg cart-activeX"></div>
+    <div class="shopping-cart__popup cart-activeX">
         <div class="shopping-cart__wrapper">
             <div class="shopping-cart__head">
                 <h3 class="shopping-cart__title">SHOPPING CART</h3>
@@ -141,8 +141,38 @@
                                 Unscented
                             </div>
                         </div>
+                        
+                        <div class="item__quantity">
+                            <div class="item__quantity__input">
+                                <button class="input__minus">-</button>
+                                <input type="number" value="1" min="0" autocomplete="off" step="1" name="item-quantity">
+                                <button class="input__plus">+</button>
+                            </div>
+                            <div class="cart-item__remove">
+                                <i class="fa fa-trash-o"></i>
+                            </div>
+                        </div>
                     </div>
 
+                </div>
+
+                <div class="shopping-cart__controls">
+                    <div class="shopping-cart__details">
+                        <div class="shopping-cart__order-details">
+                            <p class="shopping-cart__total">
+                                <span>Subtotal</span>
+                                <span class="money">$20.00</span>
+                            </p>
+                            <p class="shopping-cart__message">Taxes and shipping calculated at checkout</p>
+                        </div>
+                    </div>
+                    <div class="shopping-cart__actions">
+                        <a class="btn dark-outline view-cart-btn" href="#">View Cart</a>
+                        <a class="btn primary-full check-out-btn" href="#">
+                            <span class="lock-icon"><i class="fa fa-lock" style="font-size:24px"></i></span>
+                            Check out
+                        </a>
+                    </div>
                 </div>
             </div>
             <!-- <div class="shopping-cart__empty">

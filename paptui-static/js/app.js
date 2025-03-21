@@ -26,3 +26,19 @@ $(document).ready(function () {
     }
   );
 });
+
+// OPEN/CLOSE SHOPPING CART
+$(document).ready(function () {
+  // Open mobile nav when clicking the menu button
+  $(".icon-cart-svg").click(function () {
+    $(".shopping-cart__popup__bg").addClass("cart-active");
+    $(".shopping-cart__popup").addClass("cart-active");
+    
+  });
+
+  // Close mobile nav when clicking the close (X) button
+  $(".shopping-cart__close-btn").click(function () {
+    $(".shopping-cart__popup__bg").removeClass("cart-active");
+    $(".shopping-cart__popup").removeClass("cart-active");
+  });
+});

@@ -24,6 +24,25 @@ ul {
     list-style: none;
 }
 
+.btn{
+    width: 300px;
+    max-width: 100%;
+
+    display: inline-block;
+    vertical-align: middle;
+    font: inherit;
+    text-align: center;
+    margin: 0;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    height: auto;
+    line-height: 30px;
+    padding: 9px 30px;
+    font-size: 13px / 14px * 1rem;
+
+}
+
 .announcement__banner{
     
     background-color: #d6d2c4;
