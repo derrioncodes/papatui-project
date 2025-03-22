@@ -22,7 +22,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 
 
-    <title>PAPTUI</title>
+    <title>PAPATUI</title>
 </head>
 <body>
     <div class="announcement__banner">
@@ -46,7 +46,7 @@
                         
                     </li>
                     <li class="primary-nav__item">
-                        <a class="primary-nav__link" href="#">Shop by category</a>
+                        <a class="primary-nav__link" href="#">Shop by category <span><i class="fa fa-angle-down" style="font-size:16px"></i></span></a>
                         <div class="subnav-container">
                             <ul class="subnav-menu">
                                 <li class="subnav-menu__item">
@@ -71,7 +71,7 @@
                         <a class="primary-nav__link" href="#">Bestsellers</a>
                     </li>
                     <li class="primary-nav__item">
-                        <a class="primary-nav__link" href="#">About</a>
+                        <a class="primary-nav__link" href="#">About <span><i class="fa fa-angle-down" style="font-size:16px"></i></span></a>
                         <div class="subnav-container">
                             <ul class="subnav-menu">
                                 <li class="subnav-menu__item">
@@ -112,10 +112,114 @@
                 </ul>
             </nav>
         </div>
+
+        <div class="mobile__header-navs">
+            <nav class="mobile__primary-nav">
+                <div class="open__mobile__primary-nav__btn">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </nav>
+            <!-- <nav class="primary-nav">
+                <ul class="primary-nav__items">
+                    <li class="primary-nav__item">
+                        <a class="primary-nav__link" href="#">Shop All</a>
+                        
+                    </li>
+                    <li class="primary-nav__item">
+                        <a class="primary-nav__link" href="#">Shop by category <span><i class="fa fa-angle-down" style="font-size:16px"></i></span></a>
+                        <div class="subnav-container">
+                            <ul class="subnav-menu">
+                                <li class="subnav-menu__item">
+                                    <a class="subnav-menu__link" href="#">Body + Hair</a>
+                                </li>
+                                <li class="subnav-menu__item">
+                                    <a class="subnav-menu__link" href="#">Face</a>
+                                </li>
+                                <li class="subnav-menu__item">
+                                    <a class="subnav-menu__link" href="#">Tattoo</a>
+                                </li>
+                                <li class="subnav-menu__item">
+                                    <a class="subnav-menu__link" href="#">Antiperpirant + Deodorant</a>
+                                </li>
+                                <li class="subnav-menu__item">
+                                    <a class="subnav-menu__link" href="#">Bundles</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="primary-nav__item">
+                        <a class="primary-nav__link" href="#">Bestsellers</a>
+                    </li>
+                    <li class="primary-nav__item">
+                        <a class="primary-nav__link" href="#">About <span><i class="fa fa-angle-down" style="font-size:16px"></i></span></a>
+                        <div class="subnav-container">
+                            <ul class="subnav-menu">
+                                <li class="subnav-menu__item">
+                                    <a class="subnav-menu__link" href="#">About</a>
+                                </li>
+                                <li class="subnav-menu__item">
+                                    <a class="subnav-menu__link" href="#">PAPATUI<sup>&trade;</sup> CARES</a>
+                                </li>
+                                <li class="subnav-menu__item">
+                                    <a class="subnav-menu__link" href="#">STORE LOCATOR</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav> -->
+            <nav class="secondary-nav">
+                <ul class="secondary-nav__items secondary-nav__actions">
+                    <li class="secondary-nav__item">
+                        <a class="secondary-nav__link icon-cart-svg" href="#">
+                            <img class="icon-cart" src="/assets/cart-shopping-light.svg" alt="cart" width="20" height="20">
+                            <div class="cart-count-bubble">
+                                <span class="item-count">0</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="secondary-nav__item">
+                        <a class="secondary-nav__link" href="#">
+                            <i class="fa fa-search"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
+    <!-- MOBILE NAV -->
+    <div class="mobile__nav__drawer__bg active"></div>
+    <div class="mobile__nav__drawer__open active">
+        <div class="mobile__nav__drawer__head">
+            <div class="mobile__nav__drawer__close-btn">
+                <i class="fa fa-close"></i>
+            </div>
+            <div class="mobile__nav__drawer__account">
+                <a href="#" class="account__link">
+                    <span class="account-icon__link">
+                        <i class="fa fa-user-o"></i>
+                    </span>
+                    <span>Log in</span>
+                </a>
+            </div>
+        </div>
+        <div class="mobile__nav__drawer__main">
+            <ul class="mobile__nav__drawer__items">
+                <li class="mobile__nav__drawer__items__item">
+                    <a class="mobile__nav__drawer__link" href="#">Shop All</a>
+                </li>
+                <li class="mobile__nav__drawer__items__item">
+                    <a class="mobile__nav__drawer__link" href="#">Shop All</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
      
-    <div class="shopping-cart__popup__bg cart-activeX"></div>
-    <div class="shopping-cart__popup cart-activeX">
+    <div class="shopping-cart__popup__bg"></div>
+    <div class="shopping-cart__popup">
         <div class="shopping-cart__wrapper">
             <div class="shopping-cart__head">
                 <h3 class="shopping-cart__title">SHOPPING CART</h3>

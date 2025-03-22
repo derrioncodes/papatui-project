@@ -44,6 +44,14 @@ header{
     padding: 0 30px;
 }
 
+.mobile__header-navs{
+    display: none;
+}
+
+/* .mobile__primary-nav{
+    display: none;
+} */
+
 .primary-nav{
     position: absolute;
     top: 0;
@@ -62,6 +70,7 @@ header{
    text-transform: uppercase;
    letter-spacing: 1px;
 }
+
 .primary-nav__item .primary-nav__link{
     display: block;
     line-height: 33px;
@@ -179,8 +188,6 @@ header{
     color: rgba(33, 35, 34, 0.7);
 
 }
-
-
 
 .cart-count-bubble{
     position: absolute;
@@ -653,3 +660,216 @@ header{
     background-color: #212121;
     color: #ffffff;
 }
+
+
+/* MOBILE NAV - MAX_WIDTH 600PX */
+.mobile__nav__drawer__bg{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1042;
+    overflow: hidden;
+    position: fixed;
+    background: #0b0b0b66;
+    opacity: .5;
+
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.mobile__nav__drawer__bg.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.mobile__nav__drawer__open{
+    height: 100%;
+    z-index: 1043;
+    position: fixed;
+    outline: none !important;
+    top: 0;
+    right: auto;
+    
+    width: 480px;
+    max-width: calc(100vw - 24px);
+    overflow: hidden auto;
+    background-color: #ffffff;
+
+    transition: right 0.5s ease-in-out;
+    left: -100%;
+}
+
+.mobile__nav__drawer__open.active{
+    left: 0;
+}
+
+.mobile__nav__drawer__head{
+    z-index: 2;
+
+    height: 96px;
+
+    position: sticky;
+    top: 0;
+    display: block;
+    background-color: #ffffff;
+}
+
+.mobile__nav__drawer__close-btn{
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    cursor: pointer;
+
+    z-index: 1046;
+    box-shadow: none;
+    touch-action: manipulation;
+} 
+
+.mobile__nav__drawer__close-btn i{
+    font-size: 20px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.mobile__nav__drawer__account{
+    z-index: 3;
+
+    position: absolute;
+    top: 28px;
+    right: 24px;
+    
+}
+
+.mobile__nav__drawer__account .account__link{
+    font-size: .95rem;
+    padding: 20px;
+    
+    cursor: pointer;
+
+    display: inline-flex;
+    align-items: center;
+}
+
+.account-icon__link i{
+    display: inline-block;
+    width: 1.25em;
+    margin-right: .5em;
+}
+
+.mobile__nav__drawer__main{
+    padding: 0 42px;
+    display: block;
+}
+
+.mobile__nav__drawer__items{
+    background-color: #ffffff;
+    position: static;
+}
+
+.mobile__nav__drawer__items .mobile__nav__drawer__items__item{
+    display: block;
+}
+
+ .mobile__nav__drawer__items__item:not(:last-of-type){ 
+     /* padding-bottom: 30px;
+    margin-bottom: 30px; */
+     border-bottom: 1px solid rgba(33, 35, 34, 0.2); 
+    
+} 
+
+/* .mobile__nav__drawer__items__item:last-of-type{
+    padding-bottom: 30px;
+} */
+
+.mobile__nav__drawer__items .mobile__nav__drawer__items__item .mobile__nav__drawer__link{
+    padding: 1.25em 0;
+    font-size: 1.5em;
+
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+
+    text-align: left;
+    text-decoration: none;
+    width: 100%;
+
+    line-height: 1.5;
+    opacity: 1;
+    cursor: pointer;
+    z-index: 1;
+
+    letter-spacing: 1px;
+}
+/* .mobile__nav__drawer__items{
+    position: static;
+    background-color: #ffffff;
+} */
+
+/* .mobile__nav__drawer__items__item{
+    display: block;
+
+} */
+
+/* .mobile__nav__drawer__items__item:not(:last-of-type){ */
+    /* padding-bottom: 30px;
+    margin-bottom: 30px; */
+    /* border-bottom: 1px solid rgba(255, 255, 255, .2); */
+    
+/* } */
+
+/* .mobile__nav__drawer__items__item:last-of-type{
+    padding-bottom: 30px;
+} */
+
+/* .mobile__nav__drawer__link{
+    padding: 1.25em 0;
+} */
+
+
+
+
+
+
+/* MEDIA QUERIES */
+@media (max-width: 1200px) {
+
+    .header-navs{
+        background-color: #d6d2c4;
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+    .primary-nav{
+        position: static;
+        text-align: center;
+        margin: 0 0 12px;
+        transform: translateY(0);
+    }
+
+    .primary-nav__items{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .header-navs{
+        display: none;
+    }
+
+    .mobile__header-navs{
+        display: block;
+    }
+
+    .mobile__primary-nav{
+        position: absolute;
+        top: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 30px;
+    }
+
+    
+}
+
