@@ -696,8 +696,10 @@ header{
     overflow: hidden auto;
     background-color: #ffffff;
 
-    transition: right 0.5s ease-in-out;
+    transition: left 0.5s ease-in-out;
     left: -100%;
+
+    padding-bottom: 120px;
 }
 
 .mobile__nav__drawer__open.active{
@@ -771,16 +773,12 @@ header{
     display: block;
 }
 
- .mobile__nav__drawer__items__item:not(:last-of-type){ 
-     /* padding-bottom: 30px;
-    margin-bottom: 30px; */
-     border-bottom: 1px solid rgba(33, 35, 34, 0.2); 
+.mobile__nav__drawer__items__item:not(:last-of-type){ 
+    border-bottom: 1px solid rgba(33, 35, 34, 0.2); 
     
 } 
 
-/* .mobile__nav__drawer__items__item:last-of-type{
-    padding-bottom: 30px;
-} */
+
 
 .mobile__nav__drawer__items .mobile__nav__drawer__items__item .mobile__nav__drawer__link{
     padding: 1.25em 0;
@@ -801,35 +799,157 @@ header{
 
     letter-spacing: 1px;
 }
-/* .mobile__nav__drawer__items{
-    position: static;
+
+.mobile__nav__drawer__items__item .mobile__nav__drawer__link.text09{
+    font-size: 0.9em;
+    opacity: 0.7;
+}
+
+.mobile__nav__drawer__footer{
+    padding: 0 42px;
+}
+
+.drawer__footer__social-items{
+    margin-top: 12px;
+    margin-left: -9px;
+    display: flex;
+    gap: 20px;
+}
+
+.drawer__footer__social-items .social-item{
+    width: 20px;
+    height: 20px;
+}
+
+.drawer__footer__social-items .social-item .social-icon{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.drawer__footer__social-items .social-item .social-icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+
+}
+
+/* SECONDARY MOBILE SUBNAV */
+
+.mobile__nav__drawer__subnav-container{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    bottom: 0;
+    left: auto;
     background-color: #ffffff;
-} */
 
-/* .mobile__nav__drawer__items__item{
-    display: block;
+    z-index: 4;
 
-} */
+    height: 100%;
+    overflow-y: scroll;
+    padding-bottom: 25px;
 
-/* .mobile__nav__drawer__items__item:not(:last-of-type){ */
-    /* padding-bottom: 30px;
-    margin-bottom: 30px; */
-    /* border-bottom: 1px solid rgba(255, 255, 255, .2); */
+    transition: right 0.5s ease-in-out;
+    right: -100%;
+}
+
+.mobile__nav__drawer__subnav-container.mobile-subnav-active{
+    right: 0;
+}
+
+.mobile__nav__drawer__subnav-container::-webkit-scrollbar {
+    display: none;
+    scrollbar-width: none;
+}
+
+.mobile__nav__drawer__subnav__banner{
+    position: sticky;
+    top: calc(57px - 250px);
+
+    z-index: 2;
+    padding-bottom: 6px;
+
+    height: 250px;
+}
+
+.mobile__nav__drawer__subnav__banner img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    max-width: 100%;
+    vertical-align: middle;
+    opacity: 1;
+}
+
+.mobile__nav__drawer__subnav__close-btn{
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    cursor: pointer;
+
+    z-index: 1046;
+    box-shadow: none;
+    touch-action: manipulation;
+} 
+
+.mobile__nav__drawer__subnav__close-btn i{
+    font-size: 30px;
+    color: #ffffff;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.mobile__nav__drawer__subnav__back{
+    margin: 0 42px;
+    letter-spacing: 1px;
+
+    position: relative;
+    cursor: pointer;
+}
+
+.subnav__back__btn{
+    padding:1.5em 0;
+
+    position: absolute;
+    top: 50%;
+    left: -3px;
+    transform: translateY(-50%);
+    height: 100%;
+    width: 2em;
+    background-color: transparent;
+    border: 0 none;
+    line-height: 1.5;
+    cursor: pointer;
     
-/* } */
+}
 
-/* .mobile__nav__drawer__items__item:last-of-type{
-    padding-bottom: 30px;
-} */
+.subnav__back__btn i{
+    font-size:25px;
+    color: #212121;
+    width: 100%;
+}
 
-/* .mobile__nav__drawer__link{
-    padding: 1.25em 0;
-} */
+.subnav__back__title{
+    text-align: center;
+    padding: 1.5em 1.5rem;
 
+    font-size: 16px;
+}
 
+.mobile__nav__drawer__subnav-container .mobile__nav__drawer__items{
+    padding: 0px 42px 0;
+}
 
-
-
+.mobile__nav__drawer__subnav-container .mobile__nav__drawer__items__item:first-of-type{
+    border-top: 1px solid rgba(33, 35, 34, 0.2);
+}
 
 /* MEDIA QUERIES */
 @media (max-width: 1200px) {
