@@ -72,5 +72,28 @@ ul {
     font-size: 14px;
 }
 
+@media (max-width: 480px){
+    .btn{
+        width: 300px;
+        max-width: 100%;
+    
+        display: inline-block;
+        vertical-align: middle;
+        font: inherit;
+        text-align: center;
+        margin: 0;
+        cursor: pointer;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        height: auto;
+        line-height: 30px;
+        padding: 9px 18px;
+        font-size: 12px
+    
+    }
+}
+
+
+
 
 

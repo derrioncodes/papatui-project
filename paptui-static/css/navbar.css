@@ -636,6 +636,7 @@ header{
 
 .check-out-btn{
     display: flex;
+    justify-content: center;
     gap: 6px;
     transition: all .2s ease-in-out;
 }
@@ -805,6 +806,19 @@ header{
     opacity: 0.7;
 }
 
+.mobile__nav__drawer__items__item .right-arrow{
+    position: absolute;
+    top: 50%;
+    right: .25em;
+    transform: translateY(-50%);
+
+    font-size: 1em;
+    width: 1em;
+    height: 1em;
+    line-height: 1em;
+    opacity: .7;
+}
+
 .mobile__nav__drawer__footer{
     padding: 0 42px;
 }
@@ -952,7 +966,7 @@ header{
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 1200px) {
+@media (max-width: 1370px) {
 
     .header-navs{
         background-color: #d6d2c4;
@@ -972,7 +986,24 @@ header{
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 605px) {
+
+    .header__logo{
+        height: 100%;
+    }
+    
+    .header__logo-ratio-box{
+        aspect-ratio: 4.5 / 1;
+        height: 35px;
+        
+    }
+    
+    .header__logo-ratio-box img{
+        height: 100%;
+        max-height: 35px;
+        width: 100%;
+        
+    }
 
     .header-navs{
         display: none;
@@ -990,6 +1021,88 @@ header{
         left: 30px;
     }
 
+    
+}
+
+@media (max-width: 500px) {
+
+    
+    .header__logo-ratio-box{
+        aspect-ratio: 4.5 / 1;
+        height: 35px;
+        max-width: 150px;
+        
+    }
+    
+    .header__logo-ratio-box img{
+        height: 100%;
+        max-height: 35px;
+        width: 100%;
+        max-width: 150px;
+        
+    }
+
+    .mobile__nav__drawer__items__item .right-arrow{
+        right: 0;
+    }
+
+    .mobile__nav__drawer__main{
+        padding: 0 18px;
+    }
+
+    .secondary-nav__item{
+        margin-left: 15px;
+    }
+
+    .shopping-cart__head{
+        padding: 0 18px;
+    }
+
+    .shopping-cart_items__item{
+        padding: 0 18px;
+    }
+
+    .mobile__nav__drawer__footer {
+        padding: 0 18px;
+    }
+
+    .item__details__micro-copy{
+        margin-top: 8px;
+        margin-bottom: 10px;
+    }
+
+    .mobile__nav__drawer__close-btn{
+        left: 0;
+    }
+
+    .mobile__nav__drawer__account {
+        right: 18px;
+    }
+
+    .mobile__nav__drawer__account .account__link{
+        padding-right: 0px;
+    }
+
+    .shopping-cart__order-details{
+        padding: 0 18px;
+    }
+
+    .shopping-cart__actions{
+        padding: 0 18px;
+    }
+
+    .shopping-cart__actions .btn{
+        font-size: 12px;
+        padding: 9px 18px;
+    }
+
+    .shopping-cart__actions .check-out-btn .lock-icon {
+        margin-top: 2px;
+    }
+
+    .shopping-cart__actions .check-out-btn .lock-icon i{
+        font-size: 16px !important;
+    }
     
 }
 
