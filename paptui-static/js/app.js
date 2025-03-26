@@ -82,3 +82,24 @@ $(document).ready(function () {
     $(".mobile__nav__drawer__open").removeClass("active");
   });
 });
+
+// HERO CAROUSEL CONTAINER
+
+$(document).ready(function(){
+  $('.hero-carousel-wrapper').each(function() {
+    var $sliderParent = $(this).parent();
+    $(this).slick({
+      initialSlide: 0,
+      infinite: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: true,
+      autoplay: false,
+      autoplaySpeed: 5000,
+      fade: true,
+      cssEase: 'linear'
+      
+    });
+  });
+});

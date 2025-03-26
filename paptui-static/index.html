@@ -6,6 +6,7 @@
     <!-- STYLESHEETS -->
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/hero.css">
 
     <!-- FONT FAMILY -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,6 +18,9 @@
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- SLICK SLIDER -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
 
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
@@ -119,55 +123,7 @@
                     <i class="fa fa-bars"></i>
                 </div>
             </nav>
-            <!-- <nav class="primary-nav">
-                <ul class="primary-nav__items">
-                    <li class="primary-nav__item">
-                        <a class="primary-nav__link" href="#">Shop All</a>
-                        
-                    </li>
-                    <li class="primary-nav__item">
-                        <a class="primary-nav__link" href="#">Shop by category <span><i class="fa fa-angle-down" style="font-size:16px"></i></span></a>
-                        <div class="subnav-container">
-                            <ul class="subnav-menu">
-                                <li class="subnav-menu__item">
-                                    <a class="subnav-menu__link" href="#">Body + Hair</a>
-                                </li>
-                                <li class="subnav-menu__item">
-                                    <a class="subnav-menu__link" href="#">Face</a>
-                                </li>
-                                <li class="subnav-menu__item">
-                                    <a class="subnav-menu__link" href="#">Tattoo</a>
-                                </li>
-                                <li class="subnav-menu__item">
-                                    <a class="subnav-menu__link" href="#">Antiperpirant + Deodorant</a>
-                                </li>
-                                <li class="subnav-menu__item">
-                                    <a class="subnav-menu__link" href="#">Bundles</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="primary-nav__item">
-                        <a class="primary-nav__link" href="#">Bestsellers</a>
-                    </li>
-                    <li class="primary-nav__item">
-                        <a class="primary-nav__link" href="#">About <span><i class="fa fa-angle-down" style="font-size:16px"></i></span></a>
-                        <div class="subnav-container">
-                            <ul class="subnav-menu">
-                                <li class="subnav-menu__item">
-                                    <a class="subnav-menu__link" href="#">About</a>
-                                </li>
-                                <li class="subnav-menu__item">
-                                    <a class="subnav-menu__link" href="#">PAPATUI<sup>&trade;</sup> CARES</a>
-                                </li>
-                                <li class="subnav-menu__item">
-                                    <a class="subnav-menu__link" href="#">STORE LOCATOR</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </nav> -->
+            
             <nav class="secondary-nav">
                 <ul class="secondary-nav__items secondary-nav__actions">
                     <li class="secondary-nav__item">
@@ -274,7 +230,7 @@
 
     </div>
 
-     
+     <!-- CART ITEMS -->
     <div class="shopping-cart__popup__bg"></div>
     <div class="shopping-cart__popup">
         <div class="shopping-cart__wrapper">
@@ -342,7 +298,79 @@
             </div> -->
         </div>
     </div>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-carousel-container">
+                <div class="hero-carousel-wrapper">
+                    <div class="hero__wrapper">
+                        <div class="hero-asset">
+                            <img src="/assets/Dwayne_Johnson_Papatui_Home_Page_Skincare_Main.png" alt="">
+                        </div>
+                        <div class="hero__text__wrapper">
+                            <h2 class="hero__text__title">It's time to take better care</h2>
+                            <div class="hero__text__btn btn">
+                                <a href="#">Shop skincare</a>
+                            </div>
+                        </div>
+                        <div class="hero__text__logo">
+                            <h1 class="h1-logo">PAPATUI</h1>
+                            <h2 class="h2-logo">TAKE BETTER CARE</h2>
+                        </div>
+                    </div>
+                    <div class="hero__wrapper">
+                        <div class="hero-asset">
+                            <video src="/assets/papatui-hero-video.mp4" controlsX autoplay muted loop></video>
+                        </div>
+                        <div class="hero__text__wrapper">
+                            <h2 class="hero__text__title">It's time to take better care</h2>
+                            <div class="hero__text__btn btn">
+                                <a href="#">Shop skincare</a>
+                            </div>
+                        </div>
+                        <div class="hero__text__logo">
+                            <h1 class="h1-logo">PAPATUI</h1>
+                            <h2 class="h2-logo">TAKE BETTER CARE</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- <section class="carousel-section">
+            <div class="carousel-heading">
+                Explore More Colors
+            </div>
+            <div class="carousel-container">
+                <div class="carousel-wrapper">
+                    <a href="#" class="carousel-item bg-limegreen">
+                        <div class="carousel-image">
+                            <img src="/images/yeti-friefly-product.png" alt="">
+                        </div>
+                        <div class="carousel-text">
+                            <div class="badge">NEW</div>
+                            <div class="title">FIREFLY</div>
+                        </div>
+                    </a>
+                    <a href="#" class="carousel-item bg-limegreen">
+                        <div class="carousel-image">
+                            <img src="/images/yeti-friefly-product.png" alt="">
+                        </div>
+                        <div class="carousel-text">
+                            <div class="badge">NEW</div>
+                            <div class="title">FIREFLY</div>
+                        </div>
+                    </a>
+                </div>
+                
+                
+            </div> 
+        </section> -->
+        
+    </main>
     
     <script src="/js/app.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 </body>
 </html>
