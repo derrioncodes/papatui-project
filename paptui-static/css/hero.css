@@ -71,6 +71,14 @@
     margin-top: 18px;
     padding: 9px 18px;
     width: 150px;
+
+    transition: all .2s ease-in-out;
+}
+
+.hero__text__btn.btn:hover{
+    background: #5a6939;
+    
+    
 }
 
 .hero__text__logo{
@@ -88,12 +96,14 @@
     color: white;
     font-size: 100px;
     font-weight: 700;
+    color: #efefef;
 }
 
 .hero__text__logo .h2-logo{
     color: white;
     font-size: 30px;
     text-align: right;
+    color: #efefef;
 }
 
 /* SLICK SLIDER CSS */

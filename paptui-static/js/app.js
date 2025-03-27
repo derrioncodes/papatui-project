@@ -7,6 +7,61 @@ $(document).ready(function () {
   });
 });
 
+// HEADER SCROLL ANIMATION
+// $(document).ready(function () {
+//   let lastScrollTop = 0;
+//   let headerHeight = $(".sticky-header").outerHeight(); // Get header height
+
+//   $(window).scroll(function () {
+//     let scrollTop = $(this).scrollTop();
+
+//     if (scrollTop > headerHeight) {
+//       // Only trigger after passing the header height
+//       if (scrollTop > lastScrollTop) {
+//         // Scrolling down
+//         $(".sticky-header").addClass("hide-header");
+//       } else {
+//         // Scrolling up
+//         $(".sticky-header").removeClass("hide-header");
+//       }
+//     }
+
+//     lastScrollTop = scrollTop;
+//   });
+// });
+
+$(document).ready(function () {
+  let lastScrollTop = 0;
+
+  function getHeaderHeight() {
+    let baseHeight = $(".sticky-header").outerHeight();
+    let screenWidth = $(window).width();
+    let extraHeight = $(".header-navs").outerHeight() || 0; // Get height dynamically
+
+    console.log(extraHeight);
+    
+
+    // If screen width is between 606px and 1369px, add the dynamic extra height
+    return (screenWidth >= 606 && screenWidth <= 1369) ? baseHeight + extraHeight : baseHeight;
+  }
+
+  $(window).scroll(function () {
+    let scrollTop = $(this).scrollTop();
+    let headerHeight = getHeaderHeight(); // Dynamically get header + nav height
+
+    if (scrollTop > headerHeight) {
+      // Only trigger after passing the header height
+      if (scrollTop > lastScrollTop) {
+        $(".sticky-header").addClass("hide-header"); // Scrolling down
+      } else {
+        $(".sticky-header").removeClass("hide-header"); // Scrolling up
+      }
+    }
+
+    lastScrollTop = scrollTop;
+  });
+});
+
 // PRIMARY NAV HOVER SUBMENU ANIMATION
 
 $(document).ready(function () {
