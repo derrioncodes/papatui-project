@@ -25,6 +25,11 @@ ul {
     list-style: none;
 }
 
+section{
+    margin-bottom: 54px;
+    height: 100%;
+}
+
 .btn{
     width: 300px;
     max-width: 100%;
