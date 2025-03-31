@@ -53,3 +53,9 @@
     font-weight: 400;
     margin-top: 6px;
 }
+
+@media (max-width: 1000px){
+    .multi-column-benefits_item{
+        width: 260px;
+    }
+}
