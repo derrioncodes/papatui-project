@@ -1,6 +1,6 @@
 .image-with-text__container{
     display: flex;
-    position: relative;
+    align-items: center;
     padding: 0 30px;
     height: 100%;
 }
@@ -11,21 +11,22 @@
     max-width: 640px;
     text-align: left;
     color: #212121;
+    width: 50%;
+    display: inline-block;
+    height: fit-content;
+    margin-right: -100px;
+    z-index: 1;
 
-    position: absolute;
-    top: 50%;
-    left: 100px;
-    transform: translateY(-50%);
- 
-    width: 40%;
+    position: relative;
+    left: 50px;
 }
 
 .image-with-text__text .image-with-text__title{
     margin-bottom: 12px;
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 32px !important;
-    line-height: 40px !important;
+    font-size: 32px;
+    line-height: 40px;
     position: relative;
     padding-bottom: calc(9px + 3px);
 }
@@ -41,8 +42,8 @@
 }
 
 .image-with-text__text .image-with-text__p{
-    font-size: 18px !important;
-    line-height: 26px !important;
+    font-size: 18px;
+    line-height: 26px;
 }
 
 .image-with-text__btn.btn{
@@ -64,6 +65,8 @@
     width: 66.6666666667%;
     margin-left: auto;
     height: 80vh;
+
+    display: inline-block;
 }
 
 .image-with-text__image img{
@@ -78,19 +81,91 @@
 }
 
 @media(max-width: 1440px){
+
     .image-with-text__text{
-        background-color: #f3f1ec;
-        padding: 60px;
-        max-width: 640px;
-        text-align: left;
-        color: #212121;
+        left: 0px;
+    }
+}
+
+@media(max-width: 900px){
+
+    .image-with-text__container{
+        display: flex;
+        position: relative;
+        padding: 0 30px;
+        height: 100%;
+        flex-wrap: wrap-reverse;
+    }
+
+    .image-with-text__text{
+        padding: 48px;
+        max-width: 480px;
+        margin-right: 0px;
+        z-index: 1;
     
-        position: absolute;
-        top: 50%;
+        position: relative;
         left: 30px;
-        transform: translateY(-50%);
-     
-        width: 40%;
+        top: -30px;
+        width: 100%;
+    }
+
+    .image-with-text__text .image-with-text__title{
+        font-size: 30px;
+    }
+
+    .image-with-text__image{
+        width: 100%;
+        margin-left: auto;
+        height: 80vh;
+    } 
+
+    
+}
+
+@media(max-width: 600px){
+    .image-with-text__text{
+        padding: 36px;
+        max-width: 100%;
+        margin-right: 0px;
+        z-index: 1;
+    
+        position: relative;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+    }
+
+    .image-with-text__text .image-with-text__title{
+        font-size: 22px;
+    }
+
+    .image-with-text__text .image-with-text__p{
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
+@media(max-width: 480px){
+    .image-with-text__text{
+        padding: 36px;
+        max-width: 100%;
+        margin-right: 0px;
+        z-index: 1;
+    
+        position: relative;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+    }
+
+    .image-with-text__text .image-with-text__title{
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .image-with-text__text .image-with-text__p{
+        font-size: 16px;
+        line-height: 22px;
     }
 }
 
