@@ -47,6 +47,8 @@ section{
     padding: 9px 30px;
     font-size: 13px;
 
+    transition: all .2s ease-in-out;
+
 }
 
 .announcement__banner{

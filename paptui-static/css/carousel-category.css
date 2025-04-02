@@ -67,6 +67,11 @@
     margin-top: 12px;
 }
 
+.product__button.btn:hover{
+    background-color: #212121;
+    color: #ffffff;
+}
+
 .product__details{
     margin-top: 12px;
 }
