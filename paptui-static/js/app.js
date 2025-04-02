@@ -158,3 +158,22 @@ $(document).ready(function(){
     });
   });
 });
+
+// HERO CAROUSEL CONTAINER
+
+$(document).ready(function(){
+  $('.carousel-category__wrapper').each(function() {
+    var $sliderParent = $(this).parent();
+    $(this).slick({
+      initialSlide: 0,
+      infinite: false,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      arrows: false,
+      dots: true,
+      speed: 1000,
+      
+      
+    });
+  });
+});
