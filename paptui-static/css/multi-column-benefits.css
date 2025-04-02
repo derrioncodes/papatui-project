@@ -54,7 +54,13 @@
     margin-top: 6px;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1400px){
+    .multi-column-benefits_item{
+        width: 230px;
+    }
+}
+
+@media (max-width: 1100px){
     .multi-column-benefits_item{
         width: 260px;
     }
