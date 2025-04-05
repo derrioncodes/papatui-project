@@ -30,6 +30,18 @@ section{
     height: 100%;
 }
 
+.mb0{
+    margin-bottom: 0;
+}
+
+.pb54{
+    padding-bottom: 54px;
+}
+
+.light-brown-bg{
+    background-color: rgb(243, 242, 237);
+}
+
 .btn{
     width: 300px;
     max-width: 100%;
