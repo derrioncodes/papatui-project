@@ -38,7 +38,6 @@ $(document).ready(function () {
     let screenWidth = $(window).width();
     let extraHeight = $(".header-navs").outerHeight() || 0; // Get height dynamically
 
-    console.log(extraHeight);
     
 
     // If screen width is between 606px and 1369px, add the dynamic extra height
