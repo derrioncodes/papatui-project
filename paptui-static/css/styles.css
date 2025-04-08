@@ -30,6 +30,12 @@ section{
     height: 100%;
 }
 
+.spacer{
+    border-bottom: 1px solid rgba(33, 35, 34, 0.2);
+    padding-top: 6px;
+    margin-bottom: 24px;
+}
+
 .mb0{
     margin-bottom: 0;
 }

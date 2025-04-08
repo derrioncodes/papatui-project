@@ -211,3 +211,18 @@ $(document).ready(function(){
 
   });
 });
+
+// SINGLE PRODUCT ACCORDIAN 
+$(document).ready(function () {
+  $(".accordion-header").click(function () {
+    const content = $(this).next(".accordion-content");
+
+    // Close other sections if you want only one open at a time
+    // $(".accordion-content").not(content).slideUp();
+    // $(".accordion-header").not(this).removeClass("active");
+
+    // Toggle current section
+    $(this).toggleClass("active");
+    content.slideToggle();
+  });
+});
