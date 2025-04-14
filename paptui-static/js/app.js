@@ -226,3 +226,23 @@ $(document).ready(function () {
     content.slideToggle();
   });
 });
+
+// SYNCING SLICK SLIDER
+$(document).ready(function () {
+  $('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true, // or false if you prefer sliding
+    asNavFor: '.slider-nav'
+  });
+
+  $('.slider-nav').slick({
+    slidesToShow: 3, // Adjust based on how many thumbnails you want visible
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: false,
+    centerMode: false,
+    focusOnSelect: true
+  });
+});

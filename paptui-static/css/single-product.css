@@ -16,12 +16,84 @@
 
 .single-product__media .media-gallery{
     width: 100%;
+
+    display: flex;
+    gap: 1rem;
 }
 
-.single-product__media .media-gallery .media-gallery__main-image{
-    width: 100%;
+.media-gallery__thumbnails.slider-nav.slick-initialized.slick-slider .slick-list.draggable{
+    width: 80px;
+    padding: 0px 0px !important;
+}
+
+.media-gallery__thumbnails.slider-nav.slick-initialized.slick-slider .slick-list .slick-track{
+    width: 80px !important;
+    transform: translate3d(0px, 0px, 0px) !important;
+}
+
+.gallery-thumbnail.slick-slide.slick-current.slick-center{
+    width: 100% !important;
+    margin-bottom: 15px;
+}
+
+.gallery-thumbnail.slick-slide{
+    width: 100% !important;
+    margin-bottom: 15px;
+}
+
+/* .media-gallery__thumbnails.slider-nav.slick-initialized.slick-slider .slick-list .slick-track{
+    width: 80px;
+} */
+
+/* .media-gallery__thumbnails.slider-nav.slick-initialized.slick-slider .slick-track{
+    width: 80px;
+}
+    */
+
+/* .media-gallery__thumbnails{
+    width: 80px;
+}
+
+.media-gallery__thumbnails .gallery-thumbnail{
+    width: 80px;
+
+} */
+
+.media-gallery__thumbnails .gallery-thumbnail img{
+    width: 80px;
 
 } 
+
+/* .media-gallery__main-image.slider-for.slick-initialized.slick-slider .slick-list .slick-track{
+    width: 100%;
+} */
+
+/* .single-product__media .media-gallery .media-gallery__main-image{
+    width: 100%;
+
+}  */
+
+/* .single-product__media .media-gallery .media-gallery__main-image .gallery-main-img{
+    width: 100%;
+} */
+
+.media-gallery__main-image.slider-for.slick-initialized.slick-slider{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* .gallery-main-img.slick-slide {
+    width: 100% !important;
+    max-width: 900px;
+    overflow: hidden;
+} */
+
+/* .gallery-main-img.slick-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+} */
 
 .single-product__media .media-gallery .media-gallery__main-image img{
     width: 100%;
@@ -189,6 +261,10 @@
 
 .accordion-content ul li:last-child{
     margin-bottom: 0;
+}
+
+.slider-nav .slick-current img {
+    border: 2px solid #000;
 }
 
 
