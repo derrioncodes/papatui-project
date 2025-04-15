@@ -227,22 +227,60 @@ $(document).ready(function () {
   });
 });
 
-// SYNCING SLICK SLIDER
+// SYNCING  SLIDER
 $(document).ready(function () {
-  $('.slider-for').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    fade: true, // or false if you prefer sliding
-    asNavFor: '.slider-nav'
+  const $mainImage = $(".media-gallery__main-image img");
+  const $thumbnails = $(".gallery-thumbnail img");
+  const $thumbnailContainer = $(".media-gallery__thumbnails");
+  const thumbHeight = $(".gallery-thumbnail").outerHeight(true);
+  let currentIndex = 0;
+
+  // Sync click on thumbnail
+  $thumbnails.click(function () {
+    const newSrc = $(this).attr("src");
+    $mainImage.attr("src", newSrc);
+    currentIndex = $(this).parent().index();
+
+    $(".gallery-thumbnail").removeClass("active");
+    $(this).parent().addClass("active");
   });
 
-  $('.slider-nav').slick({
-    slidesToShow: 3, // Adjust based on how many thumbnails you want visible
-    slidesToScroll: 1,
-    asNavFor: '.slider-for',
-    dots: false,
-    centerMode: false,
-    focusOnSelect: true
+  // Main image arrows
+  $(".main-arrow.next").click(function () {
+    currentIndex = (currentIndex + 1) % $thumbnails.length;
+    changeMainImage(currentIndex);
   });
+
+  $(".main-arrow.prev").click(function () {
+    currentIndex = (currentIndex - 1 + $thumbnails.length) % $thumbnails.length;
+    changeMainImage(currentIndex);
+  });
+
+  function changeMainImage(index) {
+    const newSrc = $thumbnails.eq(index).attr("src");
+    $mainImage.attr("src", newSrc);
+    $(".gallery-thumbnail").removeClass("active");
+    $thumbnails.eq(index).parent().addClass("active");
+
+    scrollToThumbnail(index);
+  }
+
+  // Scroll thumbnails
+  $(".thumb-arrow.next").click(function () {
+    $thumbnailContainer.scrollTop($thumbnailContainer.scrollTop() + thumbHeight);
+  });
+
+  $(".thumb-arrow.prev").click(function () {
+    $thumbnailContainer.scrollTop($thumbnailContainer.scrollTop() - thumbHeight);
+  });
+
+  // Initialize first thumbnail as active
+  $(".gallery-thumbnail").eq(0).addClass("active");
+
+  function scrollToThumbnail(index) {
+    const scrollPos = index * thumbHeight;
+    $thumbnailContainer.scrollTop(scrollPos);
+  }
 });
+
+
