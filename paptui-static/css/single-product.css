@@ -356,29 +356,9 @@
     }
 
     .media-gallery__thumbnails-wrapper{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 15px;
-        
+        display: none;
     }
 
-    .media-gallery__thumbnails {
-        
-    }
-
-    .media-gallery__thumbnails .gallery-thumbnail{
-        
-    }
-
-    .media-gallery__thumbnails .gallery-thumbnail img{
-        
-    }
-
-    .thumb-arrow.prev{
-        margin-bottom: 0;
-    }
 }
 
 
