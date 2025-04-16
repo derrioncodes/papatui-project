@@ -235,6 +235,11 @@ $(document).ready(function () {
   const thumbHeight = $(".gallery-thumbnail").outerHeight(true);
   let currentIndex = 0;
 
+   // Hide thumb arrows if less than or equal to 6 thumbnails
+   if ($thumbnails.length <= 6) {
+    $(".thumb-arrow").hide();
+  }
+
   // Sync click on thumbnail
   $thumbnails.click(function () {
     const newSrc = $(this).attr("src");
@@ -266,12 +271,29 @@ $(document).ready(function () {
   }
 
   // Scroll thumbnails
-  $(".thumb-arrow.next").click(function () {
-    $thumbnailContainer.scrollTop($thumbnailContainer.scrollTop() + thumbHeight);
-  });
+  // $(".thumb-arrow.next").click(function () {
+  //   $thumbnailContainer.scrollTop($thumbnailContainer.scrollTop() + thumbHeight);
+  // });
 
+  // $(".thumb-arrow.prev").click(function () {
+  //   $thumbnailContainer.scrollTop($thumbnailContainer.scrollTop() - thumbHeight);
+  // });
+
+  // Scroll thumbnails
+  $(".thumb-arrow.next").click(function () {
+    if ($(window).width() <= 600) {
+      $thumbnailContainer.scrollLeft($thumbnailContainer.scrollLeft() + thumbHeight);
+    } else {
+      $thumbnailContainer.scrollTop($thumbnailContainer.scrollTop() + thumbHeight);
+    }
+  });
+  
   $(".thumb-arrow.prev").click(function () {
-    $thumbnailContainer.scrollTop($thumbnailContainer.scrollTop() - thumbHeight);
+    if ($(window).width() <= 600) {
+      $thumbnailContainer.scrollLeft($thumbnailContainer.scrollLeft() - thumbHeight);
+    } else {
+      $thumbnailContainer.scrollTop($thumbnailContainer.scrollTop() - thumbHeight);
+    }
   });
 
   // Initialize first thumbnail as active
@@ -281,6 +303,22 @@ $(document).ready(function () {
     const scrollPos = index * thumbHeight;
     $thumbnailContainer.scrollTop(scrollPos);
   }
+
+  function updateThumbArrowVisibility() {
+    const isMobile = $(window).width() <= 600;
+    const visibleThumbs = 6;
+    const thumbCount = $(".gallery-thumbnail").length;
+  
+    if (isMobile && thumbCount <= visibleThumbs) {
+      $(".thumb-arrow").hide();
+    } else {
+      $(".thumb-arrow").show();
+    }
+  }
+  
+  // Run on page load and resize
+  $(document).ready(updateThumbArrowVisibility);
+  $(window).resize(updateThumbArrowVisibility);
 });
 
 
