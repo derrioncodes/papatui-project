@@ -227,20 +227,57 @@ $(document).ready(function () {
   });
 });
 
-// SYNCING  SLIDER
+// SYNCING CAROUSEL (Vertical on Desktop, Horizontal on Mobile)
 $(document).ready(function () {
   const $mainImage = $(".media-gallery__main-image img");
   const $thumbnails = $(".gallery-thumbnail img");
   const $thumbnailContainer = $(".media-gallery__thumbnails");
   const thumbHeight = $(".gallery-thumbnail").outerHeight(true);
+  const thumbWidth = $(".gallery-thumbnail").outerWidth(true);
   let currentIndex = 0;
 
-   // Hide thumb arrows if less than or equal to 6 thumbnails
-   if ($thumbnails.length <= 6) {
-    $(".thumb-arrow").hide();
+  // Show or hide thumbnail arrows based on thumbnail count and screen size
+  function updateThumbArrowVisibility() {
+    const isMobile = $(window).width() <= 700;
+    const $container = $(".media-gallery__thumbnails");
+    const $thumbnails = $(".gallery-thumbnail");
+    const thumbCount = $thumbnails.length;
+    const container = $(".media-gallery__thumbnails");
+
+    // Dynamically adjust how many thumbnails are shown
+    let maxVisibleThumbs = 6;
+    const screenWidth = $(window).width();
+
+    if (screenWidth <= 380) {
+      maxVisibleThumbs = 3;
+    } else if (screenWidth <= 490) {
+      maxVisibleThumbs = 4;
+    } else if (screenWidth <= 590) {
+      maxVisibleThumbs = 5;
+    }
+
+    const visibleWidth = thumbWidth * maxVisibleThumbs + (8 * (maxVisibleThumbs - 1)); // 8px gap between thumbnails
+
+    if (isMobile && (thumbCount * thumbWidth <= visibleWidth)) {
+      $(".thumb-arrow").hide();
+      $container.addClass("center-thumbnails");
+    } else {
+      $(".thumb-arrow").show();
+      $container.removeClass("center-thumbnails");
+    }
+
+      if (thumbCount <= 6) {
+        $(".thumb-arrow").hide();
+      } else {
+        $(".thumb-arrow").show();
+      }
   }
 
-  // Sync click on thumbnail
+
+  updateThumbArrowVisibility();
+  $(window).resize(updateThumbArrowVisibility);
+
+  // Sync thumbnail click
   $thumbnails.click(function () {
     const newSrc = $(this).attr("src");
     $mainImage.attr("src", newSrc);
@@ -248,9 +285,11 @@ $(document).ready(function () {
 
     $(".gallery-thumbnail").removeClass("active");
     $(this).parent().addClass("active");
+
+    scrollToThumbnail(currentIndex);
   });
 
-  // Main image arrows
+  // Main image navigation
   $(".main-arrow.next").click(function () {
     currentIndex = (currentIndex + 1) % $thumbnails.length;
     changeMainImage(currentIndex);
@@ -266,82 +305,45 @@ $(document).ready(function () {
     $mainImage.attr("src", newSrc);
     $(".gallery-thumbnail").removeClass("active");
     $thumbnails.eq(index).parent().addClass("active");
-
     scrollToThumbnail(index);
   }
 
-  // Scroll thumbnails - 1
+  // Thumbnail navigation arrows
   $(".thumb-arrow.next").click(function () {
-    $thumbnailContainer.scrollTop($thumbnailContainer.scrollTop() + thumbHeight);
-  });
-
-  $(".thumb-arrow.prev").click(function () {
-    $thumbnailContainer.scrollTop($thumbnailContainer.scrollTop() - thumbHeight);
-  });
-
-  // Scroll thumbnails - 2
-  // $(".thumb-arrow.next").click(function () {
-  //   if ($(window).width() <= 600) {
-  //     $thumbnailContainer.scrollLeft($thumbnailContainer.scrollLeft() + thumbHeight);
-  //   } else {
-  //     $thumbnailContainer.scrollTop($thumbnailContainer.scrollTop() + thumbHeight);
-  //   }
-  // });
-
-  // $(".thumb-arrow.prev").click(function () {
-  //   if ($(window).width() <= 600) {
-  //     $thumbnailContainer.scrollLeft($thumbnailContainer.scrollLeft() - thumbHeight);
-  //   } else {
-  //     $thumbnailContainer.scrollTop($thumbnailContainer.scrollTop() - thumbHeight);
-  //   }
-  // });
-
-  // Scroll thumbnails - 3
-  // $(".thumb-arrow.next").click(function () {
-  //   if ($(window).width() <= 600) {
-  //     const thumbWidth = $(".gallery-thumbnail").outerWidth(true);
-  //     $thumbnailContainer.scrollLeft($thumbnailContainer.scrollLeft() + thumbWidth);
-  //   } else {
-  //     $thumbnailContainer.scrollTop($thumbnailContainer.scrollTop() + thumbHeight);
-  //   }
-  // });
-
-  // $(".thumb-arrow.prev").click(function () {
-  //   if ($(window).width() <= 600) {
-  //     const thumbWidth = $(".gallery-thumbnail").outerWidth(true);
-  //     $thumbnailContainer.scrollLeft($thumbnailContainer.scrollLeft() - thumbWidth);
-  //   } else {
-  //     $thumbnailContainer.scrollTop($thumbnailContainer.scrollTop() - thumbHeight);
-  //   }
-  // });
-
-  // Initialize first thumbnail as active
-  $(".gallery-thumbnail").eq(0).addClass("active");
-
-  function scrollToThumbnail(index) {
-    const scrollPos = index * thumbHeight;
-    $thumbnailContainer.scrollTop(scrollPos);
-  }
-
-  function updateThumbArrowVisibility() {
-    const isMobile = $(window).width() <= 600;
-    const $container = $(".media-gallery__thumbnails");
-    const $thumbnails = $(".gallery-thumbnail");
-    const thumbCount = $thumbnails.length;
-  
-    const thumbWidth = 70 + 10; // width + margin-right
-    const visibleWidth = thumbWidth * 6;
-  
-    if (isMobile && (thumbCount * thumbWidth <= visibleWidth)) {
-      $(".thumb-arrow").hide();
+    if ($(window).width() <= 700) {
+      currentIndex = (currentIndex + 1) % $thumbnails.length; // wrap around to 0
+      changeMainImage(currentIndex);
+      $thumbnailContainer.scrollLeft(currentIndex * thumbWidth);
     } else {
-      $(".thumb-arrow").show();
+      $thumbnailContainer.scrollTop($thumbnailContainer.scrollTop() + thumbHeight);
+    }
+  });
+  
+  $(".thumb-arrow.prev").click(function () {
+    if ($(window).width() <= 700) {
+      currentIndex = (currentIndex - 1 + $thumbnails.length) % $thumbnails.length; // wrap to last
+      changeMainImage(currentIndex);
+      $thumbnailContainer.scrollLeft(currentIndex * thumbWidth);
+    } else {
+      $thumbnailContainer.scrollTop($thumbnailContainer.scrollTop() - thumbHeight);
+    }
+  });
+
+  // Scroll the container so the active thumbnail is in view
+  function scrollToThumbnail(index) {
+    if ($(window).width() <= 700) {
+      const scrollPos = index * thumbWidth;
+      $thumbnailContainer.scrollLeft(scrollPos);
+    } else {
+      const scrollPos = index * thumbHeight;
+      $thumbnailContainer.scrollTop(scrollPos);
     }
   }
-  
-  $(document).ready(updateThumbArrowVisibility);
-  $(window).resize(updateThumbArrowVisibility);
-  
+
+  // Set first thumbnail as active on load
+  $(".gallery-thumbnail").eq(0).addClass("active");
 });
+
+
 
 
