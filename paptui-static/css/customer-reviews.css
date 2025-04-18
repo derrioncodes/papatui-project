@@ -44,21 +44,31 @@
     text-align: center;
 }
 
-.single-review_star-icons{
+.single-review_icons{
     display: flex;
     justify-content: center;
     gap: 5px;
     margin: 12px 0;
 }
 
-.single-review_star-icons .star-icon{
+.single-review_icons .icon{
     width: 24px;
     height: 24px;
 }
 
-.single-review_star-icons .star-icon img{
+.single-review_icons .icon.fa-icon{
     width: 100%;
     height: 100%;
+}
+
+.single-review_icons .icon img{
+    width: 100%;
+    height: 100%;
+}
+
+.single-review_icons .icon .fas{
+    font-size: 32px;
+    color: rgba(33, 35, 34, 0.7);
 }
 
 .single-review_title{
