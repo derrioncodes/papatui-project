@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/collection-section.css">
+    <link rel="stylesheet" href="/css/home-email-capture.css">
+    <link rel="stylesheet" href="/css/footer.css">
+
+    <!-- FONT FAMILY -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- SLICK SLIDER -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+
+    <title>PAPATUI</title>
+</head>
+<body>
+    <div class="announcement__banner">
+        <p>FREE SHIPPING ON ORDERS $40+&nbsp;<span><a href="#">SHOP&nbsp;NOW</a></span></p>
+        <div class="close_btn__announcement__banner">
+            <i class="fa fa-close"></i>
+        </div>
+    </div>
+    
+    <header class="sticky-header">
+        <div class="header__logo">
+            <div class="header__logo-ratio-box">
+                <img src="/assets/Papatui_Header_Logo.png" alt="">
+            </div>
+        </div>
+        <div class="header-navs">
+            <nav class="primary-nav" >
+                <ul class="primary-nav__items">
+                    <li class="primary-nav__item">
+                        <a class="primary-nav__link" href="#">Shop All</a>
+                        
+                    </li>
+                    <li class="primary-nav__item">
+                        <a class="primary-nav__link" href="#">Shop by category <span><i class="fa fa-angle-down" style="font-size:16px"></i></span></a>
+                        <div class="subnav-container">
+                            <ul class="subnav-menu">
+                                <li class="subnav-menu__item">
+                                    <a class="subnav-menu__link" href="#">Body + Hair</a>
+                                </li>
+                                <li class="subnav-menu__item">
+                                    <a class="subnav-menu__link" href="#">Face</a>
+                                </li>
+                                <li class="subnav-menu__item">
+                                    <a class="subnav-menu__link" href="#">Tattoo</a>
+                                </li>
+                                <li class="subnav-menu__item">
+                                    <a class="subnav-menu__link" href="#">Antiperpirant + Deodorant</a>
+                                </li>
+                                <li class="subnav-menu__item">
+                                    <a class="subnav-menu__link" href="#">Bundles</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="primary-nav__item">
+                        <a class="primary-nav__link" href="#">Bestsellers</a>
+                    </li>
+                    <li class="primary-nav__item">
+                        <a class="primary-nav__link" href="#">About <span><i class="fa fa-angle-down" style="font-size:16px"></i></span></a>
+                        <div class="subnav-container">
+                            <ul class="subnav-menu">
+                                <li class="subnav-menu__item">
+                                    <a class="subnav-menu__link" href="#">About</a>
+                                </li>
+                                <li class="subnav-menu__item">
+                                    <a class="subnav-menu__link" href="#">PAPATUI<sup>&trade;</sup> CARES</a>
+                                </li>
+                                <li class="subnav-menu__item">
+                                    <a class="subnav-menu__link" href="#">STORE LOCATOR</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            
+            <nav class="secondary-nav">
+                <ul class="secondary-nav__items secondary-nav__actions">
+                    <li class="secondary-nav__item">
+                        <a class="secondary-nav__link" href="#">
+                            <i class="fa fa-user-o"></i>
+                        </a>
+                        
+                    </li>
+                    <li class="secondary-nav__item">
+                        <a class="secondary-nav__link icon-cart-svg" href="#">
+                            <img class="icon-cart" src="/assets/cart-shopping-light.svg" alt="cart" width="20" height="20">
+                            <div class="cart-count-bubble">
+                                <span class="item-count">0</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="secondary-nav__item">
+                        <a class="secondary-nav__link" href="#">
+                            <i class="fa fa-search"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        
+
+        <div class="mobile__header-navs">
+            <nav class="mobile__primary-nav">
+                <div class="open__mobile__primary-nav__btn">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </nav>
+            
+            <nav class="secondary-nav">
+                <ul class="secondary-nav__items secondary-nav__actions">
+                    <li class="secondary-nav__item">
+                        <a class="secondary-nav__link icon-cart-svg" href="#">
+                            <img class="icon-cart" src="/assets/cart-shopping-light.svg" alt="cart" width="20" height="20">
+                            <div class="cart-count-bubble">
+                                <span class="item-count">0</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="secondary-nav__item">
+                        <a class="secondary-nav__link" href="#">
+                            <i class="fa fa-search"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MOBILE NAV -->
+    <div class="mobile__nav__drawer__bg"></div>
+    <div class="mobile__nav__drawer__open">
+        <div class="mobile__nav__drawer__head">
+            <div class="mobile__nav__drawer__close-btn">
+                <i class="fa fa-close"></i>
+            </div>
+            <div class="mobile__nav__drawer__account">
+                <a href="#" class="account__link">
+                    <span class="account-icon__link">
+                        <i class="fa fa-user-o"></i>
+                    </span>
+                    <span>Log in</span>
+                </a>
+            </div>
+        </div>
+        <div class="mobile__nav__drawer__main">
+            <ul class="mobile__nav__drawer__items">
+                <li class="mobile__nav__drawer__items__item">
+                    <a class="mobile__nav__drawer__link" href="#">Shop All</a>
+                </li>
+                <li class="mobile__nav__drawer__items__item">
+                    <a class="mobile__nav__drawer__link" href="#">Shop By Category <span class="right-arrow"><i class="fa fa-angle-right"></i></span></a>
+                    <div class="mobile__nav__drawer__subnav-container">
+                        <div class="mobile__nav__drawer__subnav__banner">
+                            <img src="/assets/mobile-secondary-subnav-banner_completefacecare_scent_uncented__01.png" alt="">
+                        </div>
+                        <div class="mobile__nav__drawer__subnav__close-btn">
+                            <i class="fa fa-close"></i>
+                        </div>
+                        <div class="mobile__nav__drawer__subnav__back">
+                            <button class="subnav__back__btn" type="button">
+                                <i class="fa fa-angle-left"></i>
+                            </button>
+                            <div class="subnav__back__title">Shop by Category</div>
+                        </div>
+                        <ul class="mobile__nav__drawer__items">
+                            <li class="mobile__nav__drawer__items__item">
+                                <a class="mobile__nav__drawer__link" href="#">Body + Hair Care</a>
+                            </li>
+                            <li class="mobile__nav__drawer__items__item">
+                                <a class="mobile__nav__drawer__link" href="#">Face Care</a>
+                            </li>
+                            <li class="mobile__nav__drawer__items__item">
+                                <a class="mobile__nav__drawer__link" href="#">Tattoo Care</a>
+                            </li>
+                            <li class="mobile__nav__drawer__items__item">
+                                <a class="mobile__nav__drawer__link" href="#">Antiperspirant + Deodarant</a>
+                            </li>
+                            <li class="mobile__nav__drawer__items__item">
+                                <a class="mobile__nav__drawer__link" href="#">Bundles</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mobile__nav__drawer__items__item">
+                    <a class="mobile__nav__drawer__link" href="#">Best Sellers</a>
+                </li>
+                <li class="mobile__nav__drawer__items__item">
+                    <a class="mobile__nav__drawer__link text09" href="#">Store Locator</a>
+                </li>
+                <li class="mobile__nav__drawer__items__item">
+                    <a class="mobile__nav__drawer__link text09" href="#">About PAPTUI<sup>&trade;</sup></a>
+                </li>
+                <li class="mobile__nav__drawer__items__item">
+                    <a class="mobile__nav__drawer__link text09" href="#">PAPTUI Cares<sup>&trade;</sup></a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile__nav__drawer__footer">
+            <div class="drawer__footer__social-items">
+                <div class="social-item">
+                    <a class="social-icon" href="#">
+                        <img src="/assets/papatui_instagram.png" alt="" srcset=""/>
+                    </a>
+                </div>
+                <div class="social-item">
+                    <a class="social-icon" href="#">
+                        <img src="/assets/papatui-tiktok.png" alt="" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+     <!-- CART ITEMS -->
+    <div class="shopping-cart__popup__bg"></div>
+    <div class="shopping-cart__popup">
+        <div class="shopping-cart__wrapper">
+            <div class="shopping-cart__head">
+                <h3 class="shopping-cart__title">SHOPPING CART</h3>
+                <div class="shopping-cart__quantity">(1 item )</div>
+                <div class="shopping-cart__close-btn">
+                    <i class="fa fa-close"></i>
+                </div>
+            </div>
+            <div class="shopping-cart_items__container">
+                <div class="shopping-cart_items__content">
+                    <div class="shopping-cart_items__item">
+                        <div class="item__image">
+                            <img src="/assets/TattooCareBundle_scent_uncented__01.png" alt="">
+                        </div>
+                        <div class="item__details">
+                            <div class="item__details__title">
+                                Tattoo Care Bundle
+                            </div>
+                            <div class="item__details__price">
+                                $20.00
+                            </div>
+                            <div class="item__details__micro-copy">
+                                Unscented
+                            </div>
+                        </div>
+                        
+                        <div class="item__quantity">
+                            <div class="item__quantity__input">
+                                <button class="input__minus">-</button>
+                                <input type="number" value="1" min="0" autocomplete="off" step="1" name="item-quantity">
+                                <button class="input__plus">+</button>
+                            </div>
+                            <div class="cart-item__remove">
+                                <i class="fa fa-trash-o"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="shopping-cart__controls">
+                    <div class="shopping-cart__details">
+                        <div class="shopping-cart__order-details">
+                            <p class="shopping-cart__total">
+                                <span>Subtotal</span>
+                                <span class="money">$20.00</span>
+                            </p>
+                            <p class="shopping-cart__message">Taxes and shipping calculated at checkout</p>
+                        </div>
+                    </div>
+                    <div class="shopping-cart__actions">
+                        <a class="btn dark-outline view-cart-btn" href="#">View Cart</a>
+                        <a class="btn primary-full check-out-btn" href="#">
+                            <span class="lock-icon"><i class="fa fa-lock" style="font-size:24px"></i></span>
+                            Check out
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="shopping-cart__empty">
+                <p class="shopping-cart__empty__title">Your cart is currently empty</p>
+                <a class="shopping-cart__empty__btn" href="#">SHOP NOW</a>
+            </div> -->
+        </div>
+    </div>
+
+    <main>
+        <section class="collection__section">
+            <div class="collection__header">
+                <h1>Shop All</h1>
+            </div>
+
+            <div class="collection__products">
+                <div class="product__item">
+                    <div class="product-card__top">
+                        <a href="#">
+                            <ul class="product__label">
+                                <li class="product__label-li">
+                                    <p class="product__label-text">Best Seller</p>
+                                </li>
+                            </ul>
+                            <div class="product__image">
+                                <a href="#">
+                                    <img src="/assets/papa_facecare_eyepatch__01_896295c6-22d6-4781-8c70-48a1f856e5be.png" alt="">
+                                </a>
+                            </div>
+                            <div class="product__button btn">
+                                <a href="#">Add to cart</a>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="product__details">
+                        <a href="#">
+                            <p class="product__micro-copy">Unscented</p>
+                            <h3 class="product__title">Complete Face Care Bundle</h3>
+                            <p class="product__price">$53.00</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="product__item">
+                    <div class="product-card__top">
+                        <a href="#">
+                            <ul class="product__label">
+                                <li class="product__label-li">
+                                    <p class="product__label-text">Best Seller</p>
+                                </li>
+                            </ul>
+                            <div class="product__image">
+                                <a href="#">
+                                    <img src="/assets/papa_facecare_eyepatch__01_896295c6-22d6-4781-8c70-48a1f856e5be.png" alt="">
+                                </a>
+                            </div>
+                            <div class="product__button btn">
+                                <a href="#">Add to cart</a>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="product__details">
+                        <a href="#">
+                            <p class="product__micro-copy">Unscented</p>
+                            <h3 class="product__title">Complete Face Care Bundle</h3>
+                            <p class="product__price">$53.00</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="product__item">
+                    <div class="product-card__top">
+                        <a href="#">
+                            <ul class="product__label">
+                                <li class="product__label-li">
+                                    <p class="product__label-text">Best Seller</p>
+                                </li>
+                            </ul>
+                            <div class="product__image">
+                                <a href="#">
+                                    <img src="/assets/papa_facecare_eyepatch__01_896295c6-22d6-4781-8c70-48a1f856e5be.png" alt="">
+                                </a>
+                            </div>
+                            <div class="product__button btn">
+                                <a href="#">Add to cart</a>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="product__details">
+                        <a href="#">
+                            <p class="product__micro-copy">Unscented</p>
+                            <h3 class="product__title">Complete Face Care Bundle</h3>
+                            <p class="product__price">$53.00</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="product__item">
+                    <div class="product-card__top">
+                        <a href="#">
+                            <ul class="product__label">
+                                <li class="product__label-li">
+                                    <p class="product__label-text">Best Seller</p>
+                                </li>
+                            </ul>
+                            <div class="product__image">
+                                <a href="#">
+                                    <img src="/assets/papa_facecare_eyepatch__01_896295c6-22d6-4781-8c70-48a1f856e5be.png" alt="">
+                                </a>
+                            </div>
+                            <div class="product__button btn">
+                                <a href="#">Add to cart</a>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="product__details">
+                        <a href="#">
+                            <p class="product__micro-copy">Unscented</p>
+                            <h3 class="product__title">Complete Face Care Bundle</h3>
+                            <p class="product__price">$53.00</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-email-capture__section">
+            <div class="home-email-capture__container">
+                <h2 class="email-capture__heading">SUBSCRIBE TO GET 10% OFF</h2>
+                <p class="email-capture__paragraph">Get in on exclusive deals like 10% off your first order and more when you subscribe to our mailing list</p>
+                <form class="email-capture__form">
+                    <input type="email" name="email" placeholder="Enter email address">
+                </form>
+                <button class="email-capture__btn btn">Subscribe</button>
+                <p class="email-capture__disclaimer">You can unsubscribe from our mailing list at any time. Further details of how we handle your personal information can be found in our <a style="text-decoration: underline; color: #0066cc;" href="#">Privacy&nbsp;Policy</a>.<br>By subscribing you agree to our <a style="text-decoration: underline; color: #0066cc;" href="#">Terms and Conditions</a>.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer__container">
+            <div class="footer-nav">
+                <img src="/assets/Papatui_Flame_Logo_1a526e18-3e67-45a5-a57e-51c3cb7674d2.png" alt="">
+            </div>
+            <div class="footer-nav">
+                <h5 class="footer-nav__title">About</h5>
+                <ul class="footer-nav__items">
+                    <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__link">About Us</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__link">PAPATUI<sup>&trade;</sup> Cares</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__link">Store Locator</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__link">FAQs</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-nav">
+                <h5 class="footer-nav__title">SUPPORT & CONTACT</h5>
+                <ul class="footer-nav__items">
+                    <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__link">FAQs</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__link">Contact Us</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__link">Privacy</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__link">Terms of Use</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__link">Accessbility Statement</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-nav social">
+                <h5 class="footer-nav__title">Social</h5>
+                <ul class="footer-nav__items social__items">
+                    <li class="footer-nav__item social__item">
+                        <a class="footer-nav__link social-icon" href="#">
+                            <img src="/assets/papatui_footer_white_instagram.png" alt="" srcset=""/>
+                        </a>
+                    </li>
+                    <li class="footer-nav__item social__item">
+                        <a class="footer-nav__link social-icon" href="#">
+                            <img src="/assets/papatui_footer_white_tiktok.png" alt="" />
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="footer-copyright__text">&copy; <script>document.write(new Date().getFullYear());</script>, PAPATUI</div>
+        </div>
+
+    </footer>
+    
+    <script src="/js/app.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+</body>
+</html>
