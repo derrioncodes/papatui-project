@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/faq.css">
+    <link rel="stylesheet" href="/css/accordian.css">
+    <link rel="stylesheet" href="/css/home-email-capture.css">
+    <link rel="stylesheet" href="/css/footer.css">
+
+    <!-- FONT FAMILY -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- SLICK SLIDER -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+
+    <title>PAPATUI</title>
+</head>
+<body>
+    <div class="announcement__banner">
+        <p>FREE SHIPPING ON ORDERS $40+&nbsp;<span><a href="#">SHOP&nbsp;NOW</a></span></p>
+        <div class="close_btn__announcement__banner">
+            <i class="fa fa-close"></i>
+        </div>
+    </div>
+    
+    <header class="sticky-header">
+        <div class="header__logo">
+            <div class="header__logo-ratio-box">
+                <img src="/assets/Papatui_Header_Logo.png" alt="">
+            </div>
+        </div>
+        <div class="header-navs">
+            <nav class="primary-nav" >
+                <ul class="primary-nav__items">
+                    <li class="primary-nav__item">
+                        <a class="primary-nav__link" href="/shop-all.html">Shop All</a>
+                        
+                    </li>
+                    <li class="primary-nav__item">
+                        <a class="primary-nav__link" href="#">Shop by category <span><i class="fa fa-angle-down" style="font-size:16px"></i></span></a>
+                        <div class="subnav-container">
+                            <ul class="subnav-menu">
+                                <li class="subnav-menu__item">
+                                    <a class="subnav-menu__link" href="#">Body + Hair</a>
+                                </li>
+                                <li class="subnav-menu__item">
+                                    <a class="subnav-menu__link" href="#">Face</a>
+                                </li>
+                                <li class="subnav-menu__item">
+                                    <a class="subnav-menu__link" href="#">Tattoo</a>
+                                </li>
+                                <li class="subnav-menu__item">
+                                    <a class="subnav-menu__link" href="#">Antiperpirant + Deodorant</a>
+                                </li>
+                                <li class="subnav-menu__item">
+                                    <a class="subnav-menu__link" href="#">Bundles</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="primary-nav__item">
+                        <a class="primary-nav__link" href="#">Bestsellers</a>
+                    </li>
+                    <li class="primary-nav__item">
+                        <a class="primary-nav__link" href="#">About <span><i class="fa fa-angle-down" style="font-size:16px"></i></span></a>
+                        <div class="subnav-container">
+                            <ul class="subnav-menu">
+                                <li class="subnav-menu__item">
+                                    <a class="subnav-menu__link" href="#">About</a>
+                                </li>
+                                <li class="subnav-menu__item">
+                                    <a class="subnav-menu__link" href="#">PAPATUI<sup>&trade;</sup> CARES</a>
+                                </li>
+                                <li class="subnav-menu__item">
+                                    <a class="subnav-menu__link" href="#">STORE LOCATOR</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            
+            <nav class="secondary-nav">
+                <ul class="secondary-nav__items secondary-nav__actions">
+                    <li class="secondary-nav__item">
+                        <a class="secondary-nav__link" href="#">
+                            <i class="fa fa-user-o"></i>
+                        </a>
+                        
+                    </li>
+                    <li class="secondary-nav__item">
+                        <a class="secondary-nav__link icon-cart-svg" href="#">
+                            <img class="icon-cart" src="/assets/cart-shopping-light.svg" alt="cart" width="20" height="20">
+                            <div class="cart-count-bubble">
+                                <span class="item-count">0</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="secondary-nav__item">
+                        <a class="secondary-nav__link" href="#">
+                            <i class="fa fa-search"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        
+
+        <div class="mobile__header-navs">
+            <nav class="mobile__primary-nav">
+                <div class="open__mobile__primary-nav__btn">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </nav>
+            
+            <nav class="secondary-nav">
+                <ul class="secondary-nav__items secondary-nav__actions">
+                    <li class="secondary-nav__item">
+                        <a class="secondary-nav__link icon-cart-svg" href="#">
+                            <img class="icon-cart" src="/assets/cart-shopping-light.svg" alt="cart" width="20" height="20">
+                            <div class="cart-count-bubble">
+                                <span class="item-count">0</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="secondary-nav__item">
+                        <a class="secondary-nav__link" href="#">
+                            <i class="fa fa-search"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MOBILE NAV -->
+    <div class="mobile__nav__drawer__bg"></div>
+    <div class="mobile__nav__drawer__open">
+        <div class="mobile__nav__drawer__head">
+            <div class="mobile__nav__drawer__close-btn">
+                <i class="fa fa-close"></i>
+            </div>
+            <div class="mobile__nav__drawer__account">
+                <a href="#" class="account__link">
+                    <span class="account-icon__link">
+                        <i class="fa fa-user-o"></i>
+                    </span>
+                    <span>Log in</span>
+                </a>
+            </div>
+        </div>
+        <div class="mobile__nav__drawer__main">
+            <ul class="mobile__nav__drawer__items">
+                <li class="mobile__nav__drawer__items__item">
+                    <a class="mobile__nav__drawer__link" href="/shop-all.html">Shop All</a>
+                </li>
+                <li class="mobile__nav__drawer__items__item">
+                    <a class="mobile__nav__drawer__link" href="#">Shop By Category <span class="right-arrow"><i class="fa fa-angle-right"></i></span></a>
+                    <div class="mobile__nav__drawer__subnav-container">
+                        <div class="mobile__nav__drawer__subnav__banner">
+                            <img src="/assets/mobile-secondary-subnav-banner_completefacecare_scent_uncented__01.png" alt="">
+                        </div>
+                        <div class="mobile__nav__drawer__subnav__close-btn">
+                            <i class="fa fa-close"></i>
+                        </div>
+                        <div class="mobile__nav__drawer__subnav__back">
+                            <button class="subnav__back__btn" type="button">
+                                <i class="fa fa-angle-left"></i>
+                            </button>
+                            <div class="subnav__back__title">Shop by Category</div>
+                        </div>
+                        <ul class="mobile__nav__drawer__items">
+                            <li class="mobile__nav__drawer__items__item">
+                                <a class="mobile__nav__drawer__link" href="#">Body + Hair Care</a>
+                            </li>
+                            <li class="mobile__nav__drawer__items__item">
+                                <a class="mobile__nav__drawer__link" href="#">Face Care</a>
+                            </li>
+                            <li class="mobile__nav__drawer__items__item">
+                                <a class="mobile__nav__drawer__link" href="#">Tattoo Care</a>
+                            </li>
+                            <li class="mobile__nav__drawer__items__item">
+                                <a class="mobile__nav__drawer__link" href="#">Antiperspirant + Deodarant</a>
+                            </li>
+                            <li class="mobile__nav__drawer__items__item">
+                                <a class="mobile__nav__drawer__link" href="#">Bundles</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mobile__nav__drawer__items__item">
+                    <a class="mobile__nav__drawer__link" href="#">Best Sellers</a>
+                </li>
+                <li class="mobile__nav__drawer__items__item">
+                    <a class="mobile__nav__drawer__link text09" href="#">Store Locator</a>
+                </li>
+                <li class="mobile__nav__drawer__items__item">
+                    <a class="mobile__nav__drawer__link text09" href="#">About PAPTUI<sup>&trade;</sup></a>
+                </li>
+                <li class="mobile__nav__drawer__items__item">
+                    <a class="mobile__nav__drawer__link text09" href="#">PAPTUI Cares<sup>&trade;</sup></a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile__nav__drawer__footer">
+            <div class="drawer__footer__social-items">
+                <div class="social-item">
+                    <a class="social-icon" href="#">
+                        <img src="/assets/papatui_instagram.png" alt="" srcset=""/>
+                    </a>
+                </div>
+                <div class="social-item">
+                    <a class="social-icon" href="#">
+                        <img src="/assets/papatui-tiktok.png" alt="" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+     <!-- CART ITEMS -->
+    <div class="shopping-cart__popup__bg"></div>
+    <div class="shopping-cart__popup">
+        <div class="shopping-cart__wrapper">
+            <div class="shopping-cart__head">
+                <h3 class="shopping-cart__title">SHOPPING CART</h3>
+                <div class="shopping-cart__quantity">(1 item )</div>
+                <div class="shopping-cart__close-btn">
+                    <i class="fa fa-close"></i>
+                </div>
+            </div>
+            <div class="shopping-cart_items__container">
+                <div class="shopping-cart_items__content">
+                    <div class="shopping-cart_items__item">
+                        <div class="item__image">
+                            <img src="/assets/TattooCareBundle_scent_uncented__01.png" alt="">
+                        </div>
+                        <div class="item__details">
+                            <div class="item__details__title">
+                                Tattoo Care Bundle
+                            </div>
+                            <div class="item__details__price">
+                                $20.00
+                            </div>
+                            <div class="item__details__micro-copy">
+                                Unscented
+                            </div>
+                        </div>
+                        
+                        <div class="item__quantity">
+                            <div class="item__quantity__input">
+                                <button class="input__minus">-</button>
+                                <input type="number" value="1" min="0" autocomplete="off" step="1" name="item-quantity">
+                                <button class="input__plus">+</button>
+                            </div>
+                            <div class="cart-item__remove">
+                                <i class="fa fa-trash-o"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="shopping-cart__controls">
+                    <div class="shopping-cart__details">
+                        <div class="shopping-cart__order-details">
+                            <p class="shopping-cart__total">
+                                <span>Subtotal</span>
+                                <span class="money">$20.00</span>
+                            </p>
+                            <p class="shopping-cart__message">Taxes and shipping calculated at checkout</p>
+                        </div>
+                    </div>
+                    <div class="shopping-cart__actions">
+                        <a class="btn dark-outline view-cart-btn" href="#">View Cart</a>
+                        <a class="btn primary-full check-out-btn" href="#">
+                            <span class="lock-icon"><i class="fa fa-lock" style="font-size:24px"></i></span>
+                            Check out
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="shopping-cart__empty">
+                <p class="shopping-cart__empty__title">Your cart is currently empty</p>
+                <a class="shopping-cart__empty__btn" href="#">SHOP NOW</a>
+            </div> -->
+        </div>
+    </div>
+
+    <main>
+        <section class="faq__section mt30">
+            <div class="faq__title__container">
+                <div class="title_container">
+                    <h1 class="title title-text">Contact Us</h1>
+                    <p class="text">If you have any questions or would like to get in touch with the PAPATUI team, please email us at support@papatui.com</p>
+                </div>
+            </div>
+
+            <div class="faq__title__container faq-headline mt30">
+                <div class="title_container">
+                    <h1 class="title title-text">FAQS</h1>
+                </div>
+            </div>
+
+            <div class="faq-question__container">
+                <div class="faq__wrapper">
+                    <div class="title_container">
+                        <h1 class="title title-text left faq__category">General</h1>
+                    </div>
+
+                    <div class="accordion">
+                        <div class="accordion-item no-borders">
+                            <div class="accordion-header">
+                                <h3 class="letter-spacing_1px">Where can I buy PAPATUI™ products?</h3>
+                                <div class="x-icon"></div>
+                            </div>
+                            <div class="accordion-content">
+                                <p class="text">PAPATUI™ products can be purchased on papatui.com, Target.com, and inside your local Target store (starting to roll-out from March 10th).</p>
+                          </div>
+                        </div>
+                        <div class="accordion-item no-borders">
+                            <div class="accordion-header">
+                                <h3 class="letter-spacing_1px">Do you have a consumer or professional sampling program?</h3>
+                                <div class="x-icon"></div>
+                            </div>
+                          <div class="accordion-content">
+                            <p class="text">Unfortunately, we do not have a consumer or professional sampling program at this time.</p>
+                          </div>
+                        </div>
+                        <div class="accordion-item no-borders">
+                            <div class="accordion-header">
+                                <h3 class="letter-spacing_1px">Do you have gift cards?</h3>
+                                <div class="x-icon"></div>
+                            </div>
+                          <div class="accordion-content">
+                            <p class="text">Unfortunately, we do not offer any gift cards at this time. Please check our website www.papatui.com for future availability.</p>
+                          </div>
+                        </div>
+                        <div class="accordion-item no-borders">
+                            <div class="accordion-header">
+                                <h3 class="letter-spacing_1px">Can women use PAPATUI™ products?</h3>
+                                <div class="x-icon"></div>
+                            </div>
+                          <div class="accordion-content">
+                            <p class="text">Although our products are formulated with men in mind they can be used and enjoyed by anyone.</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq__wrapper">
+                    <div class="title_container">
+                        <h1 class="title title-text left faq__category">ORDERS</h1>
+                    </div>
+
+                    <div class="accordion">
+                        <div class="accordion-item no-borders">
+                            <div class="accordion-header">
+                                <h3 class="letter-spacing_1px">Do you ship to Canada?</h3>
+                                <div class="x-icon"></div>
+                            </div>
+                            <div class="accordion-content">
+                                <p class="text">We're working to ship to Canada and as soon as we do you'll be the first to know</p>
+                          </div>
+                        </div>
+                        <div class="accordion-item no-borders">
+                            <div class="accordion-header">
+                                <h3 class="letter-spacing_1px">Where do you ship?</h3>
+                                <div class="x-icon"></div>
+                            </div>
+                          <div class="accordion-content">
+                            <p class="text">We currently only ship within the United States. We do not ship to the Virgin Islands, Puerto Rico, or Canada.</p>
+                          </div>
+                        </div>
+                        <div class="accordion-item no-borders">
+                            <div class="accordion-header">
+                                <h3 class="letter-spacing_1px">Do you offer free shipping?</h3>
+                                <div class="x-icon"></div>
+                            </div>
+                          <div class="accordion-content">
+                            <p class="text">As a special launch treat we are offering free shipping on all orders $40 or more</p>
+                          </div>
+                        </div>
+                        <div class="accordion-item no-borders">
+                            <div class="accordion-header">
+                                <h3 class="letter-spacing_1px">When will my order ship?</h3>
+                                <div class="x-icon"></div>
+                            </div>
+                          <div class="accordion-content">
+                            <p class="text">Papatui.com orders are typically processed within 2-4 business days (we don't ship on weekends or major holidays). Orders placed by 1 PM EST Monday through Friday will be processed the same day. Then, it's passed to our shipping carriers. Once the carrier accepts and scans your package, the tracking information sent via email will be updated and give an ETA on when you can expect your package to arrive.</p>
+                          </div>
+                        </div>
+                        <div class="accordion-item no-borders">
+                            <div class="accordion-header">
+                                <h3 class="letter-spacing_1px">What forms of payment do you accept?</h3>
+                                <div class="x-icon"></div>
+                            </div>
+                          <div class="accordion-content">
+                            <p class="text">We accept Visa, Mastercard and American Express. We also accept Paypal, Google Pay, Shop Pay and Venmo. We are unable to accept prepaid gift cards, checks, or money orders</p>
+                          </div>
+                        </div>
+                        <div class="accordion-item no-borders">
+                            <div class="accordion-header">
+                                <h3 class="letter-spacing_1px">I have a question about my order, who can I talk to?</h3>
+                                <div class="x-icon"></div>
+                            </div>
+                          <div class="accordion-content">
+                            <p class="text">You've got questions, we've got answers. Please reach out to us at support@papatui.com for any order related questions and we'll be happy to help. We are available Monday - Friday from 8am-5pm EST</p>
+                          </div>
+                        </div>
+                        <div class="accordion-item no-borders">
+                            <div class="accordion-header">
+                                <h3 class="letter-spacing_1px">Can I cancel my order?</h3>
+                                <div class="x-icon"></div>
+                            </div>
+                          <div class="accordion-content">
+                            <p class="text">After you place an order our team gets working on it right away. Because of this, we cannot guarantee that we'll be able to cancel your order once it's been placed, but we'll do our best. Please reach out to us at support@papatui.com</p>
+                          </div>
+                        </div>
+                        <div class="accordion-item no-borders">
+                            <div class="accordion-header">
+                                <h3 class="letter-spacing_1px">What do I do if a product I want is out of stock?</h3>
+                                <div class="x-icon"></div>
+                            </div>
+                          <div class="accordion-content">
+                            <p class="text">If you click “Notify me when available”, you will receive an email when the product is back in stock. Please note this will not be available during promotional periods. Please check back often as we will be restocking on an on-going basis. Please also note that our team is not able to provide restock timing for products that are unavailable. We apologize for any inconvenience.</p>
+                          </div>
+                        </div>
+                        <div class="accordion-item no-borders">
+                            <div class="accordion-header">
+                                <h3 class="letter-spacing_1px">When will my order ship?</h3>
+                                <div class="x-icon"></div>
+                            </div>
+                          <div class="accordion-content">
+                            <p class="text">Papatui.com orders are typically processed within 2-4 business days (we don't ship on weekends or major holidays). Orders placed by 1 PM EST Monday through Friday will be processed the same day. Then, it's passed to our shipping carriers. Once the carrier accepts and scans your package, the tracking information sent via email will be updated and give an ETA on when you can expect your package to arrive.</p>
+                          </div>
+                        </div>
+                        <div class="accordion-item no-borders">
+                            <div class="accordion-header">
+                                <h3 class="letter-spacing_1px">Do you offer returns?</h3>
+                                <div class="x-icon"></div>
+                            </div>
+                          <div class="accordion-content">
+                            <p class="text mb30">We love our products and hope you do too. However, if you purchased your products through papatui.com and your order is not to your liking, please email us at support@papatui.com for more information.</p>
+                            <p class="text">If you did not purchase your products through papatui.com and instead at Target or Target.com, we recommend reaching out directly to Target for a refund.</p>
+                          </div>
+                        </div>
+                        <div class="accordion-item no-borders">
+                            <div class="accordion-header">
+                                <h3 class="letter-spacing_1px">How do I create a subscription order/account?</h3>
+                                <div class="x-icon"></div>
+                            </div>
+                          <div class="accordion-content">
+                            <p class="text">When placing an order, select the “Subscribe” option on the product page. This will allow you to select the frequency in which you want that item delivered. Once you have successfully completed that order and checked out, you are enrolled and have created a subscription account.</p>
+                          </div>
+                        </div>
+                        <div class="accordion-item no-borders">
+                            <div class="accordion-header">
+                                <h3 class="letter-spacing_1px">How do I manage/update my subscription?</h3>
+                                <div class="x-icon"></div>
+                            </div>
+                          <div class="accordion-content">
+                            <p class="text mb30">To manage your subscription, log into your account on papatui.com and navigate to your <a href="#" style="text-decoration: underline;">account page</a>. At the top under MY ACCOUNT click on the link MANAGE SUBSCRIPTIONS.</p>
+                            <p class="text">There you will be able to manage any item you have on subscription, skip a delivery or reschedule an upcoming delivery</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq__wrapper">
+                    <div class="title_container">
+                        <h1 class="title title-text left faq__category">PRODUCT EXPERIENCE</h1>
+                    </div>
+
+                    <div class="accordion">
+                        <div class="accordion-item no-borders">
+                            <div class="accordion-header">
+                                <h3 class="letter-spacing_1px">Do you ship to Canada?</h3>
+                                <div class="x-icon"></div>
+                            </div>
+                            <div class="accordion-content">
+                                <p class="text">We're working to ship to Canada and as soon as we do you'll be the first to know</p>
+                          </div>
+                        </div>
+                        <div class="accordion-item no-borders">
+                            <div class="accordion-header">
+                                <h3 class="letter-spacing_1px">Where do you ship?</h3>
+                                <div class="x-icon"></div>
+                            </div>
+                          <div class="accordion-content">
+                            <p class="text">We currently only ship within the United States. We do not ship to the Virgin Islands, Puerto Rico, or Canada.</p>
+                          </div>
+                        </div>
+                        <div class="accordion-item no-borders">
+                            <div class="accordion-header">
+                                <h3 class="letter-spacing_1px">Do you offer free shipping?</h3>
+                                <div class="x-icon"></div>
+                            </div>
+                          <div class="accordion-content">
+                            <p class="text">As a special launch treat we are offering free shipping on all orders $40 or more</p>
+                          </div>
+                        </div>
+                        <div class="accordion-item no-borders">
+                            <div class="accordion-header">
+                                <h3 class="letter-spacing_1px">When will my order ship?</h3>
+                                <div class="x-icon"></div>
+                            </div>
+                          <div class="accordion-content">
+                            <p class="text">Papatui.com orders are typically processed within 2-4 business days (we don't ship on weekends or major holidays). Orders placed by 1 PM EST Monday through Friday will be processed the same day. Then, it's passed to our shipping carriers. Once the carrier accepts and scans your package, the tracking information sent via email will be updated and give an ETA on when you can expect your package to arrive.</p>
+                          </div>
+                        </div>
+                        <div class="accordion-item no-borders">
+                            <div class="accordion-header">
+                                <h3 class="letter-spacing_1px">What forms of payment do you accept?</h3>
+                                <div class="x-icon"></div>
+                            </div>
+                          <div class="accordion-content">
+                            <p class="text">We accept Visa, Mastercard and American Express. We also accept Paypal, Google Pay, Shop Pay and Venmo. We are unable to accept prepaid gift cards, checks, or money orders</p>
+                          </div>
+                        </div>
+                        <div class="accordion-item no-borders">
+                            <div class="accordion-header">
+                                <h3 class="letter-spacing_1px">I have a question about my order, who can I talk to?</h3>
+                                <div class="x-icon"></div>
+                            </div>
+                          <div class="accordion-content">
+                            <p class="text">You've got questions, we've got answers. Please reach out to us at support@papatui.com for any order related questions and we'll be happy to help. We are available Monday - Friday from 8am-5pm EST</p>
+                          </div>
+                        </div>
+                        <div class="accordion-item no-borders">
+                            <div class="accordion-header">
+                                <h3 class="letter-spacing_1px">Can I cancel my order?</h3>
+                                <div class="x-icon"></div>
+                            </div>
+                          <div class="accordion-content">
+                            <p class="text">After you place an order our team gets working on it right away. Because of this, we cannot guarantee that we'll be able to cancel your order once it's been placed, but we'll do our best. Please reach out to us at support@papatui.com</p>
+                          </div>
+                        </div>
+                        <div class="accordion-item no-borders">
+                            <div class="accordion-header">
+                                <h3 class="letter-spacing_1px">What do I do if a product I want is out of stock?</h3>
+                                <div class="x-icon"></div>
+                            </div>
+                          <div class="accordion-content">
+                            <p class="text">If you click “Notify me when available”, you will receive an email when the product is back in stock. Please note this will not be available during promotional periods. Please check back often as we will be restocking on an on-going basis. Please also note that our team is not able to provide restock timing for products that are unavailable. We apologize for any inconvenience.</p>
+                          </div>
+                        </div>
+                        <div class="accordion-item no-borders">
+                            <div class="accordion-header">
+                                <h3 class="letter-spacing_1px">When will my order ship?</h3>
+                                <div class="x-icon"></div>
+                            </div>
+                          <div class="accordion-content">
+                            <p class="text">Papatui.com orders are typically processed within 2-4 business days (we don't ship on weekends or major holidays). Orders placed by 1 PM EST Monday through Friday will be processed the same day. Then, it's passed to our shipping carriers. Once the carrier accepts and scans your package, the tracking information sent via email will be updated and give an ETA on when you can expect your package to arrive.</p>
+                          </div>
+                        </div>
+                        <div class="accordion-item no-borders">
+                            <div class="accordion-header">
+                                <h3 class="letter-spacing_1px">Do you offer returns?</h3>
+                                <div class="x-icon"></div>
+                            </div>
+                          <div class="accordion-content">
+                            <p class="text mb30">We love our products and hope you do too. However, if you purchased your products through papatui.com and your order is not to your liking, please email us at support@papatui.com for more information.</p>
+                            <p class="text">If you did not purchase your products through papatui.com and instead at Target or Target.com, we recommend reaching out directly to Target for a refund.</p>
+                          </div>
+                        </div>
+                        <div class="accordion-item no-borders">
+                            <div class="accordion-header">
+                                <h3 class="letter-spacing_1px">How do I create a subscription order/account?</h3>
+                                <div class="x-icon"></div>
+                            </div>
+                          <div class="accordion-content">
+                            <p class="text">When placing an order, select the “Subscribe” option on the product page. This will allow you to select the frequency in which you want that item delivered. Once you have successfully completed that order and checked out, you are enrolled and have created a subscription account.</p>
+                          </div>
+                        </div>
+                        <div class="accordion-item no-borders">
+                            <div class="accordion-header">
+                                <h3 class="letter-spacing_1px">How do I manage/update my subscription?</h3>
+                                <div class="x-icon"></div>
+                            </div>
+                          <div class="accordion-content">
+                            <p class="text mb30">To manage your subscription, log into your account on papatui.com and navigate to your <a href="#" style="text-decoration: underline;">account page</a>. At the top under MY ACCOUNT click on the link MANAGE SUBSCRIPTIONS.</p>
+                            <p class="text">There you will be able to manage any item you have on subscription, skip a delivery or reschedule an upcoming delivery</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer__container">
+            <div class="footer-nav">
+                <img src="/assets/Papatui_Flame_Logo_1a526e18-3e67-45a5-a57e-51c3cb7674d2.png" alt="">
+            </div>
+            <div class="footer-nav">
+                <h5 class="footer-nav__title">About</h5>
+                <ul class="footer-nav__items">
+                    <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__link">About Us</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__link">PAPATUI<sup>&trade;</sup> Cares</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__link">Store Locator</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__link">FAQs</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-nav">
+                <h5 class="footer-nav__title">SUPPORT & CONTACT</h5>
+                <ul class="footer-nav__items">
+                    <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__link">FAQs</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__link">Contact Us</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__link">Privacy</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__link">Terms of Use</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__link">Accessbility Statement</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-nav social">
+                <h5 class="footer-nav__title">Social</h5>
+                <ul class="footer-nav__items social__items">
+                    <li class="footer-nav__item social__item">
+                        <a class="footer-nav__link social-icon" href="#">
+                            <img src="/assets/papatui_footer_white_instagram.png" alt="" srcset=""/>
+                        </a>
+                    </li>
+                    <li class="footer-nav__item social__item">
+                        <a class="footer-nav__link social-icon" href="#">
+                            <img src="/assets/papatui_footer_white_tiktok.png" alt="" />
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="footer-copyright__text">&copy; <script>document.write(new Date().getFullYear());</script>, PAPATUI</div>
+        </div>
+
+    </footer>
+    
+    <script src="/js/app.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+</body>
+</html>
