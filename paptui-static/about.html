@@ -6,10 +6,9 @@
     <!-- STYLESHEETS -->
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/navbar.css">
-    <link rel="stylesheet" href="/css/single-product.css">
-    <link rel="stylesheet" href="/css/customer-reviews.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/grid-columns.css">
     <link rel="stylesheet" href="/css/home-email-capture.css">
-    <link rel="stylesheet" href="/css/image-with-text.css">
     <link rel="stylesheet" href="/css/footer.css">
 
     <!-- FONT FAMILY -->
@@ -50,7 +49,7 @@
             <nav class="primary-nav" >
                 <ul class="primary-nav__items">
                     <li class="primary-nav__item">
-                        <a class="primary-nav__link" href="#">Shop All</a>
+                        <a class="primary-nav__link" href="/shop-all.html">Shop All</a>
                         
                     </li>
                     <li class="primary-nav__item">
@@ -170,7 +169,7 @@
         <div class="mobile__nav__drawer__main">
             <ul class="mobile__nav__drawer__items">
                 <li class="mobile__nav__drawer__items__item">
-                    <a class="mobile__nav__drawer__link" href="#">Shop All</a>
+                    <a class="mobile__nav__drawer__link" href="/shop-all.html">Shop All</a>
                 </li>
                 <li class="mobile__nav__drawer__items__item">
                     <a class="mobile__nav__drawer__link" href="#">Shop By Category <span class="right-arrow"><i class="fa fa-angle-right"></i></span></a>
@@ -307,183 +306,45 @@
     </div>
 
     <main>
-        <section class="single-product_section">
-            <div class="single-product__container">
-                <div class="single-product__media">
-                    <div class="media-gallery">
-                        <div class="media-gallery__thumbnails-wrapper">
-                            <button class="thumb-arrow prev"><i class="fa fa-angle-up"></i></button>
-                            <div class="media-gallery__thumbnails">
-                                <div class="gallery-thumbnail">
-                                    <img src="/assets/PAPATUI_single-product_image.png" alt="">
-                                </div>
-                                <div class="gallery-thumbnail">
-                                    <img src="/assets/PAPATUI_PDP_Toner__02.png" alt="">
-                                </div>
-                                <div class="gallery-thumbnail">
-                                    <img src="/assets/PAPATUI_PDP_Toner__03.png" alt="">
-                                </div>
-                                <div class="gallery-thumbnail">
-                                    <img src="/assets/PAPATUI_PDP_Toner__04.png" alt="">
-                                </div>
-                                <div class="gallery-thumbnail">
-                                    <img src="/assets/PAPATUI_PDP_Toner__05.png" alt="">
-                                </div>
-                                <div class="gallery-thumbnail">
-                                    <img src="/assets/PAPATUI_PDP_Toner__06.png" alt="">
-                                </div>
-                                <div class="gallery-thumbnail">
-                                    <img src="/assets/PAPATUI_PDP_Facial_Moisturizer__02.png" alt="">
-                                </div>
-                                
-                                
-                            </div>
-                            <button class="thumb-arrow next"><i class="fa fa-angle-down"></i></button>
-                        </div>
+        <section class="about__section">
+            <div class="about-title_container">
+                <h1 class="about-title title-text">WELCOME TO PAPTUI</h1>
+                <p>Science backed formulations developed for performance</p>
+            </div>
 
-                        <div class="media-gallery__main-image-wrapper">
-                            <button class="main-arrow prev"><i class="fa fa-angle-left"></i></button>
-                            <div class="media-gallery__main-image">
-                                <div class="gallery-main-img">
-                                    <img src="/assets/PAPATUI_single-product_image.png" alt="">
-                                </div>
-                            </div>
-                            <button class="main-arrow next"><i class="fa fa-angle-right"></i></button>
-                        </div>
-                    </div>
+            <div class="about-video__container">
+                <div class="about-home-video">
+                    <iframe src="https://www.youtube.com/embed/Dkv173dkfbA?si=VYmzy0at3JbteznR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
-                <div class="single-product__details">
-                    <h1 class="single-product__title">Rejuvenating Facial Toner</h1>
-                    <div class="single-product__price">$10.00</div>
-                    <div class="spacer"></div>
-                    <div class="single-product__qty">
-                        <p class="qty-label">Quantity</p>
-                        <div class="item__quantity">
-                            <div class="item__quantity__input">
-                                <button class="input__minus">-</button>
-                                <input type="number" value="1" min="0" autocomplete="off" step="1" name="item-quantity">
-                                <button class="input__plus">+</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-product__add-to-cart-btn">
-                        <a class="btn primary-full check-out-btn" href="#">
-                            Add to cart
-                        </a>
-                    </div>
-                    <div class="single-product__text-box">
-                        <h5 class="text-box__heading">Product description</h5>
-                        <p>Refresh and hydrate skin with hard working ingredients. This smoothing and soothing formula helps to whisk away dead skin cells and blemish-causing oil without harsh scrubbing or alcohol. Minimizes appearance of pores, enhances skin & improves areas of dry, flaky skin.</p>
-                        <p>TAKE BETTER CARE<sup>&trade;</sup></p>
-                    </div>
-                    <div class="accordion">
-                        <div class="accordion-item">
-                            <div class="accordion-header">
-                                <h3>Key Ingredients</h3>
-                                <div class="x-icon"></div>
-                            </div>
-                            <div class="accordion-content">
-                                <ul>
-                                    <li>AHAs</li>
-                                    <li>Witch Hazel</li>
-                                    <li>Glycolic Acid</li>
-                                </ul>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                            <div class="accordion-header">
-                                <h3>Benefits</h3>
-                                <div class="x-icon"></div>
-                            </div>
-                          <div class="accordion-content">
-                            <ul>
-                                <li>Tightens pore</li>
-                                <li>Exfoliates, hydrates & brightens skin</li>
-                                <li>Free from parabens and phthalates, cruelty free, formulated without sulfates and vegan</li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                            <div class="accordion-header">
-                                <h3>Scent Notes</h3>
-                                <div class="x-icon"></div>
-                            </div>
-                          <div class="accordion-content">
-                            <p>Unscented</p>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                            <div class="accordion-header">
-                                <h3>Full Ingredient List</h3>
-                                <div class="x-icon"></div>
-                            </div>
-                          <div class="accordion-content">
-                            <p>Ingredients: Water, Hamamelis Virginiana (Witch Hazel) Water, Propanediol, Glycolic Acid, Lactic Acid, Ethoxydiglycol, Glycerin, Sodium Hydroxide, Sodium Hyaluronate, Tartaric Acid, Phytic Acid, Hibiscus Sabdariffa (Red Sorrel) Flower Extract, Gluconolactone, Phenoxyethanol, Ethylhexylglycerin, Benzoic Acid, Tocopherol.</p>
-                          </div>
-                        </div>
-                      </div>
-                    
-                </div>
+            </div>
 
+            <div class="text">
+                <p>TAKE BETTER CARE™. A men's care line founded by Dwayne "The Rock" Johnson.</p>
             </div>
         </section>
 
-        <section class="customer-reviews__section pb54">
-            <h2 class="customer-reviews__title" style="padding: 20px;">what real guys are saying</h2>
-            <div class="customer-reviews__wrapper" style="margin-top: 24px;">
-                <div class="single-review">
-                    <div class="single-review_icons">
-                        <div class="icon  fa-icon">
-                            <i class='fas fa-quote-left' ></i>
-                        </div>
-                    </div>
-                    
-                    <div class="single-review_text">My skin felt refreshed after using the toner. I also liked that my skin did not feel irritated.</div>
-                    <div class="single-review_customer">Robert F.</div>
+        <section class="grid-columns__section">
+            <div class="grid-columns__container">
+                <div class="column">
+                    <div class="columns-title">Effective</div>
+                    <div class="columns-text">Result focused formulations<br>backed by science.</div>
                 </div>
-                <div class="single-review">
-                    <div class="single-review_icons">
-                        <div class="icon  fa-icon">
-                            <i class='fas fa-quote-left' ></i>
-                        </div>
-                    </div>
-                    
-                    <div class="single-review_text">An essential step after cleansing to close pores. Very refreshing and clean feeling</div>
-                    <div class="single-review_customer">Joe K.</div>
+                <div class="column">
+                    <div class="columns-title">HIGH QUALITY</div>
+                    <div class="columns-text">Tested by hundreds of real guys for great performance.</div>
                 </div>
-                <div class="single-review">
-                    <div class="single-review_icons">
-                        <div class="icon  fa-icon">
-                            <i class='fas fa-quote-left' ></i>
-                        </div>
-                    </div>
-                    
-                    <div class="single-review_text">It revitalized and firmed up my skin</div>
-                    <div class="single-review_customer">Manish S.</div>
+                <div class="column">
+                    <div class="columns-title">CLEANER INGREDIENTS</div>
+                    <div class="columns-text">We worked hard to formulate products that are cleaner & better for you.</div>
+                </div>
+                <div class="column">
+                    <div class="columns-title">luxury scents</div>
+                    <div class="columns-text">Developed by the top fragrance team in the&nbsp;world.</div>
                 </div>
                 
             </div>
             
-        </section>
-
-        <section class="image-with-text__section">
-            <div class="image-with-text__container">
-                <div class="image-with-text__text">
-                    <h2 class="image-with-text__title" style="color: #3e4827; font-size: 28px; font-weight: 500;">The 90 Second Face Care Routine</h2>
-                    <p class="image-with-text__p" style="margin-bottom: 1rem; color: #3e4827;"><strong>1. CLEANSE</strong></p>
-                    <p class="image-with-text__p" style="margin-bottom: 1rem; color: #3e4827; font-size: 16px;">Hydrating Facial Cleanser: Wet face. Massage into skin. Rinse.</p>
-                    <p class="image-with-text__p" style="margin-bottom: 1rem; color: #3e4827;"><strong>2. TONE</strong></p>
-                    <p class="image-with-text__p" style="margin-bottom: 1rem; color: #3e4827; font-size: 16px;">Rejuvenating Toner: Splash into hand or cotton pad. Pat into face.</p>
-                    <p class="image-with-text__p" style="margin-bottom: 1rem; color: #3e4827;"><strong>3. MOISTURIZE</strong></p>
-                    <p class="image-with-text__p" style="margin-bottom: 1rem; color: #3e4827; font-size: 16px;">Restoring Facial Moisturizer: Two-pumps. Lightly massage  into skin.</p>
-                    <p class="image-with-text__p" style="margin-bottom: 1rem; color: #3e4827;"><strong>4. FINAL TOUCHES</strong></p>
-                    <p class="image-with-text__p" style="margin-bottom: 1rem; color: #3e4827; font-size: 16px;">Awakening Eye Gel: Squeeze small amount.  Roll gently under eyes.</p>
-                </div>
-                <div class="image-with-text__image" style="height: 90vh;">
-                    <img src="/assets/PAP_Product_EyeGel_Texture_35aeef8c-f3cd-4f92-990d-6d64fc490d8a.png" alt="">
-                </div>
-            </div>
-            </div>
+            
         </section>
 
         <section class="home-email-capture__section">
@@ -497,6 +358,7 @@
                 <p class="email-capture__disclaimer">You can unsubscribe from our mailing list at any time. Further details of how we handle your personal information can be found in our <a style="text-decoration: underline; color: #0066cc;" href="#">Privacy&nbsp;Policy</a>.<br>By subscribing you agree to our <a style="text-decoration: underline; color: #0066cc;" href="#">Terms and Conditions</a>.</p>
             </div>
         </section>
+    </main>
 
     <footer>
         <div class="footer__container">
@@ -557,6 +419,7 @@
                 </ul>
             </div>
         </div>
+
 
         <div class="footer__bottom">
             <div class="footer-copyright__text">&copy; <script>document.write(new Date().getFullYear());</script>, PAPATUI</div>
