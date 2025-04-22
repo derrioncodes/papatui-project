@@ -13,6 +13,7 @@
     padding-bottom: 15px;
     font-weight: 400;
     text-align: center;
+    color: #3e4827;
 }
 
 
@@ -51,8 +52,24 @@
     font-weight: 400;
     font-size: 18px;
     text-transform: uppercase;
+    color: #3e4827;
 }
 
 .letter-spacing_1px{
     letter-spacing: 1px !important;
+}
+
+@media(max-width: 750px){
+    .faq__title__container{
+        padding: 0 18px;
+    }
+
+    .faq__wrapper{
+        padding: 0 18px;
+        
+    }
+
+    .faq__title__container .title_container .title.title-text{
+        font-size: 20px;
+    }
 }
