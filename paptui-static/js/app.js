@@ -345,5 +345,26 @@ $(document).ready(function () {
 });
 
 
+// FAQ PAGE SCROLL BEHAVIOR FOR FAQ CATEGORIES
+$(document).ready(function () {
+
+  function getHeaderHeight() {
+    return $(".sticky-header").outerHeight(true) || 0;
+  }
+
+  $(".faq-category-item a").click(function (e) {
+    e.preventDefault();
+
+    const targetId = $(this).attr("href");
+    const offset = getHeaderHeight() + 30;
+    const targetOffset = $(targetId).offset().top - offset;
+
+    $("html, body").animate({
+      scrollTop: targetOffset
+    }, 500);
+  });
+});
+
+
 
 
